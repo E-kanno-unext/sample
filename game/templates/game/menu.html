@@ -1,0 +1,41 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>メインメニュー</title>
+  <link rel="stylesheet" href="{% static 'game/css/style.css' %}">
+  <script src="{% static 'game/js/game.js' %}" defer></script>
+</head>
+<body>
+  <header class="header">
+    <nav>
+      <div class="logo">
+        <img src="{% static 'game/images/logo.svg' %}" alt="ロゴ">
+      </div>
+      <section class="first-view">
+        <div class="menu-container">
+          <h1>メインメニュー</h1>
+          <ul>
+            <li><a href="{% url 'battle_start' %}">▶ 戦う</a></li>
+            <li><a href="{% url 'rest_party' %}">▶ 回復する</a></li>
+            {% comment %} <li><a href="{% url 'use_inventory_item' %}">▶ アイテムを使う</a></li> {% endcomment %}
+            {% comment %} <li><a href="{% url 'show_shop' %}">▶ アイテムショップ</a></li> {% endcomment %}
+            {% comment %} <li><a href="{% url 'final_boss_battle' %}">▶ ラスボスに挑戦</a></li> {% endcomment %}
+            <li><a href="{% url 'map_view' %}">▶ 探索（マップ）</a></li>
+            {% comment %} <li><a href="{% url 'exit_game' %}">▶ ゲーム終了</a></li> {% endcomment %}
+          </ul>
+        </div>
+        
+          <h2>現在のログ</h2>
+          <ul>
+            {% for entry in log %}
+              <li>{{ entry }}</li>
+            {% endfor %}
+          </ul>
+        </div>
+      </section>
+    </nav>
+  </header>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!-- templates/game/index.html -->
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  {% load static %}
+  <meta charset="UTF-8">
+  <title>RPGゲーム - スタート</title>
+  <link rel="stylesheet" href="{% static 'game/css/style.css' %}">
+  <script src="{% static 'game/js/gsap.min.js' %}"></script>
+  <script src="{% static 'game/js/SplitText.min.js' %}"></script>
+  <script src="{% static 'game/js/loading.js' %}" defer></script>
+</head>
+<body>
+  <div class="loading">
+    <div class="bg"></div>
+    <div class="main">Loading</div>
+    <div class="tagline">冒険の世界へ…</div>
+  </div>
+
+  <header class="header">
+    <section class="first-view">
+      <div class="text">
+        <h1><span class="catch">ようこそ、冒険の旅へ</span></h1>
+        <h2><span class="catch">名前を入力してスタート！</span></h2>
+        <form action="{% url 'init_game' %}" method="post">
+          {% csrf_token %}
+          <input type="text" name="name" placeholder="あなたの名前" required>
+          <button type="submit">▶ ゲームスタート</button>
+        </form>
+        <p class="sentence">これはパーティ制のターン制RPGです。</p>
+      </div>
+      <div class="splide">
+        <!-- ここにスライダー画像を追加することも可能 -->
+      </div>
+    </section>
+  </header>
+</body>
+</html>

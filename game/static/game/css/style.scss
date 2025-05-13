@@ -1,0 +1,304 @@
+// style.scss
+
+@import "_variables.scss";
+@import "_header.scss";
+@import "_footer.scss";
+@import "_feature.scss";
+@import "_merit.scss";
+@import "_flow.scss";
+@import "_works.scss";
+@import "_cta.scss";
+@import "_what.scss";
+@import "_loading.scss";
+
+// ============================
+// ▼ 共通スタイル
+// ============================
+
+body {
+  font-family: "游ゴシック", "Yu Gothic", sans-serif;
+  background-color: #f5f5f5;
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  background-color: #222;
+  color: #fff;
+  border: none;
+  padding: 0.7em 1.2em;
+  margin: 0.5em;
+  font-size: 1em;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+button:hover {
+  background-color: #444;
+}
+
+input[type="text"] {
+  padding: 0.5em;
+  font-size: 1em;
+  margin-right: 1em;
+}
+
+// ============================
+// ▼ battle-ui（.first-view ベース）
+// ============================
+
+.battle-ui {
+  background: linear-gradient(to bottom, #111, #333);
+  color: #fff;
+  padding: 2em;
+
+  .party-section,
+  .enemy-section,
+  .command-section,
+  .log-section {
+    margin-top: 1.5em;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    li {
+      margin: 0.5em 0;
+    }
+  }
+
+  h2 {
+    margin-bottom: 0.5em;
+    border-bottom: 1px solid #999;
+    padding-bottom: 0.2em;
+  }
+
+  .log-section {
+    background-color: #222;
+    max-height: 200px;
+    overflow-y: auto;
+    padding: 1em;
+    border-radius: 5px;
+  }
+}
+
+// ============================
+// ▼ map-ui（.what ベース）
+// ============================
+
+.map-ui {
+  background: #eef0f4;
+  padding: 3em 1em;
+  font-family: "游ゴシック", "Yu Gothic", sans-serif;
+
+  .bg-image {
+    background-image: url('/static/game/images/map-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    z-index: -1;
+    opacity: 0.2;
+  }
+
+  .container {
+    max-width: 960px;
+    margin: 0 auto;
+    background: white;
+    padding: 2em;
+    border-radius: 10px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+
+    .text {
+      text-align: center;
+
+      h2 {
+        font-size: 2em;
+        color: #333;
+      }
+
+      .sentence {
+        font-size: 1.1em;
+        color: #666;
+        margin: 1em 0 2em;
+      }
+    }
+
+    form {
+      text-align: center;
+      margin-bottom: 2em;
+    }
+
+    .back {
+      h3 {
+        font-size: 1.3em;
+        color: #444;
+        border-bottom: 1px solid #ccc;
+        padding-bottom: 0.4em;
+      }
+
+      ul {
+        list-style: disc;
+        margin-left: 2em;
+        color: #333;
+      }
+    }
+  }
+}
+
+// ============================
+// ▼ ドラクエ風バトル画面
+// ============================
+
+.battle-screen {
+  background: linear-gradient(to bottom, #222, #000);
+  color: #fff;
+  font-family: "メイリオ", "游ゴシック", sans-serif;
+  padding: 2em;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  position: relative;
+}
+
+// 敵エリア（画面奥）
+.enemy-box {
+  text-align: center;
+  .enemy-row {
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+  }
+
+  .enemy-unit {
+    border: 1px solid #999;
+    padding: 1em;
+    background: #333;
+    border-radius: 4px;
+    min-width: 120px;
+  }
+}
+
+// 味方エリア（画面手前）
+.party-box {
+  text-align: center;
+  .party-row {
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+  }
+
+  .party-unit {
+    border: 1px solid #888;
+    padding: 1em;
+    background: #111;
+    border-radius: 4px;
+    min-width: 120px;
+  }
+}
+
+// ============================
+// ▼ コマンドウィンドウ
+// ============================
+
+.command-box {
+  background: #000;
+  border: 2px solid #fff;
+  color: #fff;
+  padding: 1em;
+  margin: 0 auto;
+  width: 60%;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.3);
+
+  button, select {
+    margin: 0.5em;
+    padding: 0.5em 1em;
+    background-color: #222;
+    color: #fff;
+    border: 1px solid #888;
+    font-size: 1em;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  button:hover {
+    background-color: #444;
+  }
+
+  select {
+    background-color: #111;
+  }
+}
+
+// ============================
+// ▼ ログウィンドウ
+// ============================
+
+.log-box {
+  background: #111;
+  color: #0f0;
+  border: 2px solid #0f0;
+  padding: 1em;
+  margin: 2em auto 0;
+  width: 80%;
+  height: 180px;
+  overflow-y: auto;
+  font-family: "Courier New", monospace;
+  border-radius: 6px;
+
+  ul {
+    list-style: none;
+    padding-left: 0;
+  }
+
+  li {
+    margin: 0.2em 0;
+  }
+}
+
+.menu-container {
+  max-width: 640px;
+  margin: 8em auto;
+  background: linear-gradient(to bottom right, #1e1e2f, #111);
+  padding: 2em 3em;
+  border: 3px solid #fff;
+  border-radius: 12px;
+  box-shadow: 0 0 16px rgba(255, 255, 255, 0.3);
+  color: #fff;
+  font-family: "メイリオ", "游ゴシック", sans-serif;
+}
+
+.menu-container h1 {
+  font-size: 2em;
+  margin-bottom: 1em;
+  text-align: center;
+}
+
+.menu-container ul {
+  list-style: none;
+  padding: 0;
+}
+
+.menu-container li {
+  margin: 0.8em 0;
+}
+
+.menu-container a {
+  display: inline-block;
+  color: #c3a3ff;
+  background-color: #222;
+  padding: 0.6em 1.2em;
+  border: 1px solid #888;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+}
+
+.menu-container a:hover {
+  background-color: #5e2bff;
+  color: #fff;
+  box-shadow: 0 0 10px #af91ff;
+}

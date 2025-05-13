@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    {% load static %}
+    <title>所持アイテム</title>
+</head>
+<body>
+    <h1>所持アイテム</h1>
+
+    {% if request.session.log %}
+        <ul>
+        {% for entry in request.session.log %}
+            <li>{{ entry }}</li>
+        {% endfor %}
+        </ul>
+    {% endif %}
+
+    {% if inventory %}
+        <ul>
+        {% for item in inventory %}
+            <li>
+                {{ item.name }}（{{ item.type }} +{{ item.power }}）
+                <a href="{% url 'use_item' forloop.counter0 %}">▶ 使う</a>
+                {% if item.type == "weapon" or item.type == "armor" %}
+                    <a href="{% url 'equip_item' forloop.counter0 %}">▶ 装備する</a>
+                {% endif %}
+            </li>
+        {% endfor %}
+        </ul>
+    {% else %}
+        <p>アイテムを所持していません。</p>
+    {% endif %}
+
+    <a href="{% url 'home' %}">▶ ホームに戻る</a>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ホーム画面</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'game/css/style.css' %}">
+    <script src="{% static 'game/js/gsap.min.js' %}"></script>
+    <script src="{% static 'game/js/SplitText.min.js' %}"></script>
+    <script src="{% static 'game/js/game.js' %}" defer></script>
+</head>
+<body>
+    <h1>{{ hero.name }} のホーム画面</h1>
+    {% if hero.evolved %}
+        <p>✨ {{ hero.name }} は進化済みの姿です！</p>
+    {% endif %}
+
+    <ul>
+        <li>HP: {{ hero.hp }} / {{ hero.max_hp }}</li>
+        <li>MP: {{ hero.mp }} / {{ hero.max_mp }}</li>
+        <li>攻撃力: {{ hero.attack }}</li>
+        <li>防御力: {{ hero.defense }}</li>
+        <li>レベル: {{ hero.level }}</li>
+        <li>経験値: {{ hero.exp }} / {{ next_exp }}</li>
+        <li>所持金: {{ hero.gold }}</li>
+    </ul>
+
+    <h2>仲間一覧</h2>
+    {% if request.session.party %}
+        <ul>
+        {% for member in request.session.party %}
+            <li>{{ member.name }} (HP: {{ member.hp }}, 攻撃力: {{ member.attack }})</li>
+        {% endfor %}
+        </ul>
+    {% else %}
+        <p>仲間はいません。</p>
+    {% endif %}
+
+    <h3>装備</h3>
+    <ul>
+        <li>武器: {{ hero.weapon.name|default:"なし" }}</li>
+        <li>防具: {{ hero.armor.name|default:"なし" }}</li>
+    </ul>
+
+
+    <p><a href="{% url 'explore' %}">▶ 探索する</a></p>
+    <p><a href="{% url 'map' %}">▶ マップを探索する</a></p>
+    <p><a href="{% url 'inventory' %}">▶ 所持アイテムを確認</a></p>
+    <p><a href="{% url 'boss_battle' %}">▶ ラスボスに挑戦</a></p>
+
+
+</body>
+</html>

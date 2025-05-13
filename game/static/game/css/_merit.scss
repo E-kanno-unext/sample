@@ -1,0 +1,390 @@
+@charset "utf-8";
+/*===================================================================================================
+□ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ 
+
+〇 MERIT 〇
+
+□ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ 
+====================================================================================================*/
+
+.merit {
+    overflow: hidden;
+    padding: 100px 0 100px 0;
+    .container {
+        .title {
+            h3 {
+                .catch {
+                    font-family: "Cinzel";
+                    font-weight: 500;
+                    letter-spacing: 10px;
+                    text-align: center;
+                    font-size: 90px;
+                }
+            }
+            h2 {
+                margin: 10px 0 0 0;
+                .catch {
+                    font-weight: 600;
+                    line-height: 1.8;
+                    text-align: center;
+                    font-size: 24px;
+                }
+            }
+        }
+        .box-wrapper {
+            padding: 30px 0 0 0;
+            .box {
+                margin: 70px 0 0 0;
+                .thumb-wrapper {
+                    display: flex;
+                    line-height: 0;
+                    .thumb {
+                        width: 50%;
+                        height: 450px;
+                        img {
+                            object-fit: cover;
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+                }
+                .text {
+                    position: relative;
+                    max-width: 1920px;
+                    margin: 0 auto 0;
+                    .back {
+                        position: absolute;
+                        z-index: 1;
+                        left: 0;
+                        top: 0;
+                        p {
+                            color: #bcbcbc;
+                            font-family: "Cinzel";
+                            font-weight: 500;
+                            line-height: 1.0;
+                            opacity: 0.4;
+                            letter-spacing: 25px;
+                            font-size: 130px;
+                        }
+                    }
+                    .inset {
+                        position: relative;
+                        z-index: 2;
+                        max-width: 1280px;
+                        margin: 0 auto 0;
+                        padding: 100px 2% 0 2%;
+                        .semi-title {
+                            display: flex;
+                            align-items: center;
+                            .number {
+                                position: relative;
+                                font-family: "Cinzel";
+                                font-weight: 600;
+                                line-height: 1.0;
+                                top: 3px;
+                                font-size: 22px;
+                            }
+                            h3 {
+                                padding: 0 0 0 10px;
+                                .catch {
+                                    line-height: 1.1;
+                                    letter-spacing: 5px;
+                                    font-size: 45px;
+                                }
+                            }
+                        }
+                        .sentence {
+                            margin: 60px 0 0 15%;
+                            p {
+                                line-height: 2.0;
+                                font-size: 18px;
+                                padding: 10px 0 10px 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/**********************************************************************************
+□ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □  
+
+◆	Stylesheet: 1024px～1280px(iPad縦からiPad横)までのモニタで適用	◆
+
+start----------------------------------------------------------------------------*/
+
+@media screen and (min-width: 1024px) and (max-width: 1280px) {
+    .merit {
+        padding: 100px 0 100px 0;
+        .container {
+            .title {
+                h3 {
+                    .catch {
+                        letter-spacing: 10px;
+                        font-size: 80px;
+                    }
+                }
+                h2 {
+                    margin: 10px 0 0 0;
+                    .catch {
+                        line-height: 1.8;
+                        font-size: 24px;
+                    }
+                }
+            }
+            .box-wrapper {
+                padding: 30px 0 0 0;
+                .box {
+                    margin: 70px 0 0 0;
+                    .thumb-wrapper {
+                        .thumb {
+                            width: 50%;
+                            height: 400px;
+                            img {
+                                object-fit: cover;
+                                width: 100%;
+                                height: 100%;
+                            }
+                        }
+                    }
+                    .text {
+                        max-width: 100%;
+                        margin: 0 auto 0;
+                        .back {
+                            left: 0;
+                            top: 0;
+                            p {
+                                line-height: 1.0;
+                                opacity: 0.4;
+                                letter-spacing: 25px;
+                                font-size: 120px;
+                            }
+                        }
+                        .inset {
+                            margin: 0 auto 0;
+                            padding: 100px 4% 0 4%;
+                            .semi-title {
+                                .number {
+                                    line-height: 1.0;
+                                    top: 3px;
+                                    font-size: 22px;
+                                }
+                                h3 {
+                                    padding: 0 0 0 10px;
+                                    .catch {
+                                        line-height: 1.1;
+                                        letter-spacing: 5px;
+                                        font-size: 42px;
+                                    }
+                                }
+                            }
+                            .sentence {
+                                margin: 60px 0 0 15%;
+                                p {
+                                    line-height: 2.0;
+                                    font-size: 18px;
+                                    padding: 10px 0 10px 0;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+} /* 1024px～1280px responsive-close */
+
+
+
+/**********************************************************************************
+□ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □  
+
+◆	Stylesheet: 768px～1023px(iPad縦からiPad横)までのモニタで適用	◆
+
+start----------------------------------------------------------------------------*/
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .merit {
+        padding: 100px 0 100px 0;
+        .container {
+            .title {
+                h3 {
+                    .catch {
+                        letter-spacing: 6px;
+                        font-size: 77px;
+                    }
+                }
+                h2 {
+                    margin: 10px 0 0 0;
+                    .catch {
+                        line-height: 1.8;
+                        font-size: 24px;
+                    }
+                }
+            }
+            .box-wrapper {
+                padding: 30px 0 0 0;
+                .box {
+                    margin: 70px 0 0 0;
+                    .thumb-wrapper {
+                        .thumb {
+                            width: 50%;
+                            height: 400px;
+                            img {
+                                object-fit: cover;
+                                width: 100%;
+                                height: 100%;
+                            }
+                        }
+                    }
+                    .text {
+                        max-width: 100%;
+                        margin: 0 auto 0;
+                        .back {
+                            left: 0;
+                            top: 0;
+                            p {
+                                line-height: 1.0;
+                                opacity: 0.4;
+                                letter-spacing: 20px;
+                                font-size: 100px;
+                            }
+                        }
+                        .inset {
+                            margin: 0 auto 0;
+                            padding: 100px 4% 0 4%;
+                            .semi-title {
+                                .number {
+                                    line-height: 1.0;
+                                    top: 3px;
+                                    font-size: 21px;
+                                }
+                                h3 {
+                                    padding: 0 0 0 10px;
+                                    .catch {
+                                        line-height: 1.1;
+                                        letter-spacing: 5px;
+                                        font-size: 40px;
+                                    }
+                                }
+                            }
+                            .sentence {
+                                margin: 60px 0 0 15%;
+                                p {
+                                    line-height: 2.0;
+                                    font-size: 18px;
+                                    padding: 10px 0 10px 0;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+} /* 768px～1023px responsive-closed */
+
+/*end ----------------------------------------------------------------------------
+□ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ 
+**********************************************************************************/
+
+
+/**********************************************************************************
+ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ 
+
+◆	Stylesheet: 767pxまで(スマホ)のモニタで適用	◆
+
+□ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ 
+start----------------------------------------------------------------------------*/
+@media screen and (max-width: 767px) {
+    .merit {
+        padding: 50px 0 50px 0;
+        .container {
+            .title {
+                h3 {
+                    .catch {
+                        letter-spacing: 4px;
+                        font-size: 9.25vw;
+                    }
+                }
+                h2 {
+                    margin: 10px 0 0 0;
+                    .catch {
+                        line-height: 1.8;
+                        font-size: 6vw;
+                    }
+                }
+            }
+            .box-wrapper {
+                padding: 10px 0 0 0;
+                .box {
+                    margin: 50px 0 0 0;
+                    .thumb-wrapper {
+                        display: block;
+                        .thumb {
+                            width: 100%;
+                            height: 200px;
+                            img {
+                                object-fit: cover;
+                                width: 100%;
+                                height: 100%;
+                            }
+                        }
+                    }
+                    .text {
+                        max-width: 100%;
+                        margin: 0 auto 0;
+                        .back {
+                            left: 0;
+                            top: 0;
+                            p {
+                                line-height: 1.0;
+                                opacity: 0.4;
+                                letter-spacing: 2vw;
+                                font-size: 14vw;
+                            }
+                        }
+                        .inset {
+                            margin: 0 auto 0;
+                            padding: 15vw 5% 0 5%;
+                            .semi-title {
+                                display: block;
+                                .number {
+                                    line-height: 1.0;
+                                    top: 3px;
+                                    font-size: 6vw;
+                                }
+                                h3 {
+                                    padding: 10px 0 0 0;
+                                    .catch {
+                                        line-height: 1.5;
+                                        letter-spacing: 2px;
+                                        font-size: 7vw;
+                                    }
+                                }
+                            }
+                            .sentence {
+                                margin: 40px 0 0 10%;
+                                p {
+                                    line-height: 2.0;
+                                    font-size: 4vw;
+                                    padding: 10px 0 10px 0;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+} /* 767px responsive-closed */
+
+/*end ----------------------------------------------------------------------------
+□ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ 
+**********************************************************************************/
+
+
+

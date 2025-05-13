@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>キャラクター作成</title>
+    {% load static %}
+</head>
+<body>
+    <h1>キャラクターを作成</h1>
+    <form method="post">
+        {% csrf_token %}
+        名前: <input type="text" name="name" required><br>
+        ジョブ: 
+        <select name="job" required>
+            <option value="戦士">戦士</option>
+            <option value="魔法使い">魔法使い</option>
+        </select><br>
+        <button type="submit">スタート！</button>
+    </form>
+
+</body>
+</html>

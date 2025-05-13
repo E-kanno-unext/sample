@@ -1,0 +1,82 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>バトル</title>
+  <link rel="stylesheet" href="{% static 'game/css/style.css' %}">
+  <script src="{% static 'game/js/battle.js' %}" defer></script>
+</head>
+<body>
+  <div class="battle-screen">
+
+    <!-- 敵表示（奥） -->
+    <div class="enemy-box">
+      <h2>敵</h2>
+      <div class="enemy-row">
+        {% for enemy in enemies %}
+          <div class="enemy-unit">
+            <p>{{ enemy.name }}</p>
+            <p>HP: {{ enemy.hp }}/{{ enemy.max_hp }}</p>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+
+    <!-- 味方表示（手前） -->
+    <div class="party-box">
+      <h2>味方</h2>
+      <div class="party-row">
+        {% for member in party %}
+          <div class="party-unit">
+            <p>{{ member.name }}</p>
+            <p>HP: {{ member.hp }}/{{ member.max_hp }}</p>
+            <p>MP: {{ member.mp }}/{{ member.max_mp }}</p>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+
+    <!-- コマンドウィンドウ -->
+    {% if is_player_turn %}
+      <div class="command-box">
+        <!-- 攻撃フォーム -->
+        <form method="get" action="{% url 'battle_action' %}">
+          <input type="hidden" name="action" value="attack">
+          <button type="submit">▶ こうげき</button>
+        </form>
+      
+        <!-- スキルフォーム -->
+        {% if acting.skills %}
+          <form method="get" action="{% url 'battle_action' %}">
+            <select name="skill">
+              {% for s in acting.skills %}
+                <option value="{{ forloop.counter0 }}">{{ s.name }} (MP{{ s.mp_cost }})</option>
+              {% endfor %}
+            </select>
+            <input type="hidden" name="action" value="skill">
+            <button type="submit">▶ スキル</button>
+          </form>
+        {% endif %}
+      </div>
+    {% else %}
+      <div class="command-box">
+        <p>敵のターン中です...</p>
+      </div>
+    {% endif %}
+
+    <!-- ログ -->
+    <div class="log-box">
+      <h2>ログ</h2>
+      <ul>
+        {% for entry in log %}
+          <li>{{ entry }}</li>
+        {% empty %}
+          <li>ログなし</li>
+        {% endfor %}
+      </ul>
+    </div>
+
+  </div>
+</body>
+</html>

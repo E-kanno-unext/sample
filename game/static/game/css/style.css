@@ -1,0 +1,3401 @@
+@charset "UTF-8";
+/*============================================
+	― 変数設定
+=============================================*/
+.header {
+  overflow: hidden;
+  background: url(../images/header-bg.jpg) no-repeat 0 0;
+  background-size: cover;
+}
+.header .container {
+  max-width: 1920px;
+  margin: 0 auto 0;
+}
+.header .container nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 2% 0 2%;
+}
+.header .container nav .logo {
+  line-height: 0;
+  width: 200px;
+}
+.header .container nav ul {
+  display: flex;
+  align-items: center;
+}
+.header .container nav ul li {
+  margin: 0 30px 0 0;
+}
+.header .container nav ul li a {
+  color: #000000;
+  font-family: "Cinzel";
+  font-weight: 500;
+  letter-spacing: 2px;
+  font-size: 22px;
+  padding: 0 0 0 0;
+}
+.header .container nav ul li:last-child {
+  margin: 0 0 0 0;
+}
+.header .container nav h1 {
+  display: none;
+}
+.header .container .first-view {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row-reverse;
+  margin: 20px 0 0 0;
+  padding: 0 0 0 3%;
+}
+.header .container .first-view .text {
+  color: #343434;
+  width: calc(100% - 50vw);
+  padding: 50px 0 0 0;
+}
+.header .container .first-view .text h2 .catch {
+  font-family: "Cinzel";
+  font-weight: 500;
+  line-height: 1.25;
+  letter-spacing: 5px;
+  font-size: 85px;
+}
+.header .container .first-view .text h1 .catch {
+  font-weight: 600;
+  letter-spacing: 2px;
+  font-size: 32px;
+}
+.header .container .first-view .text ul {
+  margin: 30px 0 0 0;
+}
+.header .container .first-view .text ul li {
+  background: url(../images/verify.svg) no-repeat 0 center;
+  background-size: 20px auto;
+  font-size: 20px;
+  padding: 5px 20px 5px 30px;
+}
+.header .container .first-view .text .sentence {
+  margin: 10px 0 0 0;
+}
+.header .container .first-view .text .sentence p {
+  line-height: 2;
+  font-size: 18px;
+  padding: 10px 0 10px 0;
+}
+.header .container .first-view .splide {
+  width: 50vw;
+}
+.header .container .first-view .splide .splide__track {
+  width: 100%;
+}
+.header .container .first-view .splide .splide__track .splide__list {
+  width: 100%;
+}
+.header .container .first-view .splide .splide__track .splide__list .splide__slide {
+  width: 100%;
+}
+.header .container .first-view .splide .splide__track .splide__list .splide__slide .thumb {
+  overflow: hidden;
+  position: relative;
+  right: -5vw;
+  top: 0;
+  border-radius: 50%;
+  width: 50vw;
+  height: 50vw;
+}
+.header .container .first-view .splide .splide__track .splide__list .splide__slide .thumb img {
+  border-radius: 50%;
+  transition: 8s ease-out;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.header .container .first-view .splide .splide__track .splide__list .splide__slide.is-active .thumb img {
+  transform: scale(1.15);
+  transition-delay: 0s;
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1280px) {
+  .header .container {
+    max-width: 1920px;
+    margin: 0 auto 0;
+  }
+  .header .container nav {
+    padding: 30px 2% 0 2%;
+  }
+  .header .container nav .logo {
+    line-height: 0;
+    width: 170px;
+  }
+  .header .container nav ul li {
+    margin: 0 20px 0 0;
+  }
+  .header .container nav ul li a {
+    letter-spacing: 2px;
+    font-size: 19px;
+    padding: 0 0 0 0;
+  }
+  .header .container nav ul li:last-child {
+    margin: 0 0 0 0;
+  }
+  .header .container nav h1 {
+    display: none;
+  }
+  .header .container .first-view {
+    margin: 20px 0 0 0;
+    padding: 0 0 0 3%;
+  }
+  .header .container .first-view .text {
+    width: calc(100% - 50vw);
+    padding: 50px 0 0 0;
+  }
+  .header .container .first-view .text h2 .catch {
+    line-height: 1.25;
+    letter-spacing: 5px;
+    font-size: 80px;
+  }
+  .header .container .first-view .text h1 .catch {
+    letter-spacing: 2px;
+    font-size: 28px;
+  }
+  .header .container .first-view .text ul {
+    margin: 30px 0 0 0;
+  }
+  .header .container .first-view .text ul li {
+    background-size: 19px auto;
+    font-size: 19px;
+    padding: 5px 20px 5px 30px;
+  }
+  .header .container .first-view .text .sentence {
+    margin: 10px 0 0 0;
+  }
+  .header .container .first-view .text .sentence p {
+    line-height: 2;
+    font-size: 17px;
+    padding: 10px 0 10px 0;
+  }
+  .header .container .first-view .splide {
+    position: relative;
+    width: 50vw;
+  }
+  .header .container .first-view .splide .splide__track .splide__list .splide__slide .thumb {
+    right: -5vh;
+    top: 0;
+    width: 50vw;
+    height: 50vw;
+  }
+  .header .container .first-view .splide .splide__track .splide__list .splide__slide .thumb img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+  .header .container .first-view .splide .splide__track .splide__list .splide__slide.is-active .thumb img {
+    transform: scale(1.15);
+    transition-delay: 0s;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .header .container {
+    max-width: 1920px;
+    margin: 0 auto 0;
+  }
+  .header .container nav {
+    padding: 30px 2% 0 2%;
+  }
+  .header .container nav .logo {
+    line-height: 0;
+    width: 170px;
+  }
+  .header .container nav ul {
+    display: none;
+  }
+  .header .container nav h1 {
+    display: block;
+  }
+  .header .container nav h1 .catch {
+    font-size: 17px;
+  }
+  .header .container .first-view {
+    margin: 20px 0 0 0;
+    padding: 0 0 0 3%;
+  }
+  .header .container .first-view .text {
+    width: calc(100% - 50vw);
+    padding: 50px 0 0 0;
+  }
+  .header .container .first-view .text h2 .catch {
+    line-height: 1.25;
+    letter-spacing: 5px;
+    font-size: 60px;
+  }
+  .header .container .first-view .text h1 .catch {
+    letter-spacing: 2px;
+    font-size: 26px;
+  }
+  .header .container .first-view .text ul {
+    width: 120%;
+    margin: 30px 0 0 0;
+  }
+  .header .container .first-view .text ul li {
+    background-size: 18px auto;
+    font-size: 18px;
+    padding: 5px 20px 5px 28px;
+  }
+  .header .container .first-view .text .sentence {
+    margin: 10px 0 0 0;
+  }
+  .header .container .first-view .text .sentence p {
+    line-height: 2;
+    font-size: 16px;
+    padding: 10px 0 10px 0;
+  }
+  .header .container .first-view .splide {
+    position: relative;
+    width: 50vw;
+  }
+  .header .container .first-view .splide .splide__track .splide__list .splide__slide .thumb {
+    right: -5vw;
+    top: 0;
+    width: 50vw;
+    height: 50vw;
+  }
+  .header .container .first-view .splide .splide__track .splide__list .splide__slide .thumb img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+  .header .container .first-view .splide .splide__track .splide__list .splide__slide.is-active .thumb img {
+    transform: scale(1.15);
+    transition-delay: 0s;
+  }
+}
+@media screen and (max-width: 767px) {
+  .header .container {
+    max-width: 1920px;
+    margin: 0 auto 0;
+  }
+  .header .container nav {
+    padding: 20px 3% 0 3%;
+  }
+  .header .container nav .logo {
+    line-height: 0;
+    width: 35vw;
+  }
+  .header .container nav ul {
+    display: none;
+  }
+  .header .container nav h1 {
+    display: block;
+  }
+  .header .container nav h1 .catch {
+    line-height: 1.3;
+    font-size: 4vw;
+  }
+  .header .container .first-view {
+    display: block;
+    margin: 20px 0 0 0;
+    padding: 0 0 0 0;
+  }
+  .header .container .first-view .text {
+    width: calc(100% - 0vw);
+    padding: 20px 4% 0 4%;
+  }
+  .header .container .first-view .text h2 .catch {
+    line-height: 1.25;
+    letter-spacing: 5px;
+    font-size: 12vw;
+  }
+  .header .container .first-view .text h1 .catch {
+    letter-spacing: 2px;
+    font-size: 6.5vw;
+  }
+  .header .container .first-view .text ul {
+    width: 120%;
+    margin: 30px 0 0 0;
+  }
+  .header .container .first-view .text ul li {
+    background-size: 4vw auto;
+    letter-spacing: 0;
+    font-size: 4.35vw;
+    padding: 5px 20px 5px 4.5vw;
+  }
+  .header .container .first-view .text .sentence {
+    margin: 10px 0 0 0;
+  }
+  .header .container .first-view .text .sentence p {
+    line-height: 2;
+    font-size: 4vw;
+    padding: 10px 0 10px 0;
+  }
+  .header .container .first-view .splide {
+    position: relative;
+    width: 90vw;
+    margin: 0 auto 0;
+  }
+  .header .container .first-view .splide .splide__track .splide__list .splide__slide .thumb {
+    right: 0;
+    top: 0;
+    width: 90vw;
+    height: 90vw;
+  }
+  .header .container .first-view .splide .splide__track .splide__list .splide__slide .thumb img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+  .header .container .first-view .splide .splide__track .splide__list .splide__slide.is-active .thumb img {
+    transform: scale(1.15);
+    transition-delay: 0s;
+  }
+}
+/*===================================================================================================
+□ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ 
+
+〇 FOOTER 〇
+
+□ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ 
+====================================================================================================*/
+.footer {
+  overflow: hidden;
+  background: #000000;
+  padding: 120px 0 60px 0;
+}
+.footer .container {
+  max-width: 1680px;
+  margin: 0 auto 0;
+  padding: 0 2% 0 2%;
+}
+.footer .container .top .logo {
+  position: relative;
+  line-height: 0;
+  width: 200px;
+  margin: 0 auto 0;
+}
+.footer .container .top .logo .plane,
+.footer .container .top .logo .white {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: auto;
+}
+.footer .container .top nav {
+  width: 1080px;
+  margin: 0 auto 0;
+}
+.footer .container .top nav ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 80px 0 0 0;
+}
+.footer .container .top nav ul li {
+  position: relative;
+  padding: 8px 50px 0 0;
+}
+.footer .container .top nav ul li:before {
+  content: "";
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translate(0, -50%) rotate(45deg);
+  background: #a4a4a4;
+  width: 1px;
+  height: 20px;
+}
+.footer .container .top nav ul li a {
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+}
+.footer .container .top nav ul li a .en {
+  font-family: "Cinzel";
+  font-size: 24px;
+}
+.footer .container .top nav ul li a .jp {
+  font-size: 16px;
+  padding: 0 0 0 5px;
+}
+.footer .container .top nav ul li:last-child {
+  padding: 8px 0 0 0;
+}
+.footer .container .top nav ul li:last-child:before {
+  display: none;
+}
+.footer .container .privacy {
+  padding: 60px 0 20px 0;
+}
+.footer .container .privacy p {
+  text-align: right;
+}
+.footer .container .privacy p a {
+  position: relative;
+  color: #ffffff;
+  font-family: "Cinzel";
+  letter-spacing: 10px;
+  font-size: 16px;
+}
+.footer .container .privacy p a::before {
+  content: "";
+  position: absolute;
+  left: -20px;
+  top: 50%;
+  transform: translate(0, -50%);
+  border-width: 4px 0 4px 8px;
+  border-style: solid;
+  border-color: transparent transparent transparent #747474;
+  width: 0;
+  height: 0;
+}
+.footer .container .copyright {
+  border-top: solid 1px #adadad;
+  text-align: center;
+  padding: 25px 0 0 0;
+}
+.footer .container .copyright small {
+  color: #ffffff;
+  letter-spacing: 3px;
+  font-size: 14px;
+}
+
+/**********************************************************************************
+□ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □  
+
+◆	Stylesheet: 1024px～1280px(iPad縦からiPad横)までのモニタで適用	◆
+
+start----------------------------------------------------------------------------*/
+@media screen and (min-width: 1024px) and (max-width: 1280px) {
+  .footer {
+    padding: 120px 0 60px 0;
+  }
+  .footer .container {
+    max-width: 100%;
+    margin: 0 auto 0;
+    padding: 0 4% 0 4%;
+  }
+  .footer .container .top .logo {
+    width: 200px;
+    margin: 0 auto 0;
+  }
+  .footer .container .top nav {
+    width: 100%;
+    margin: 20px auto 0;
+  }
+  .footer .container .top nav ul {
+    padding: 80px 0 0 0;
+  }
+  .footer .container .top nav ul li {
+    padding: 8px 50px 0 0;
+  }
+  .footer .container .top nav ul li:before {
+    right: 20px;
+    top: 50%;
+    transform: translate(0, -50%) rotate(45deg);
+    width: 1px;
+    height: 20px;
+  }
+  .footer .container .top nav ul li a .en {
+    font-size: 24px;
+  }
+  .footer .container .top nav ul li a .jp {
+    font-size: 16px;
+    padding: 0 0 0 5px;
+  }
+  .footer .container .top nav ul li:last-child {
+    padding: 8px 0 0 0;
+  }
+  .footer .container .top nav ul li:last-child:before {
+    display: none;
+  }
+  .footer .container .privacy {
+    padding: 60px 0 20px 0;
+  }
+  .footer .container .privacy p a {
+    letter-spacing: 10px;
+    font-size: 16px;
+  }
+  .footer .container .privacy p a::before {
+    left: -20px;
+    top: 50%;
+    transform: translate(0, -50%);
+    border-width: 4px 0 4px 8px;
+  }
+  .footer .container .copyright {
+    padding: 25px 0 0 0;
+  }
+  .footer .container .copyright small {
+    letter-spacing: 3px;
+    font-size: 14px;
+  }
+} /* 1024px～1280px responsive-close */
+/**********************************************************************************
+□ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □  
+
+◆	Stylesheet: 768px～1023px(iPad縦からiPad横)までのモニタで適用	◆
+
+start----------------------------------------------------------------------------*/
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .footer {
+    padding: 120px 0 60px 0;
+  }
+  .footer .container {
+    max-width: 100%;
+    margin: 0 auto 0;
+    padding: 0 2.5% 0 2.5%;
+  }
+  .footer .container .top .logo {
+    width: 200px;
+    margin: 0 auto 0;
+  }
+  .footer .container .top nav {
+    width: 100%;
+    margin: 20px auto 0;
+  }
+  .footer .container .top nav ul {
+    padding: 80px 0 0 0;
+  }
+  .footer .container .top nav ul li {
+    padding: 8px 50px 0 0;
+  }
+  .footer .container .top nav ul li:before {
+    right: 20px;
+    top: 50%;
+    transform: translate(0, -50%) rotate(45deg);
+    width: 1px;
+    height: 20px;
+  }
+  .footer .container .top nav ul li a .en {
+    font-size: 24px;
+  }
+  .footer .container .top nav ul li a .jp {
+    font-size: 16px;
+    padding: 0 0 0 5px;
+  }
+  .footer .container .top nav ul li:last-child {
+    padding: 8px 0 0 0;
+  }
+  .footer .container .top nav ul li:last-child:before {
+    display: none;
+  }
+  .footer .container .privacy {
+    padding: 60px 0 20px 0;
+  }
+  .footer .container .privacy p a {
+    letter-spacing: 10px;
+    font-size: 16px;
+  }
+  .footer .container .privacy p a::before {
+    left: -20px;
+    top: 50%;
+    transform: translate(0, -50%);
+    border-width: 4px 0 4px 8px;
+  }
+  .footer .container .copyright {
+    padding: 25px 0 0 0;
+  }
+  .footer .container .copyright small {
+    letter-spacing: 2px;
+    font-size: 13px;
+  }
+  .footer .container .copyright small .sp-disblock {
+    display: block;
+  }
+} /* 768px～1023px responsive-closed */
+/*end ----------------------------------------------------------------------------
+□ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ 
+**********************************************************************************/
+/**********************************************************************************
+ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ 
+
+◆	Stylesheet: 767pxまで(スマホ)のモニタで適用	◆
+
+□ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ 
+start----------------------------------------------------------------------------*/
+@media screen and (max-width: 767px) {
+  .footer {
+    padding: 120px 0 60px 0;
+  }
+  .footer .container {
+    max-width: 100%;
+    margin: 0 auto 0;
+    padding: 0 2.5% 0 2.5%;
+  }
+  .footer .container .top .logo {
+    width: 200px;
+    margin: 0 auto 0;
+  }
+  .footer .container .top nav {
+    width: 100%;
+    margin: 20px auto 0;
+  }
+  .footer .container .top nav ul {
+    display: block;
+    padding: 80px 0 0 0;
+  }
+  .footer .container .top nav ul li {
+    border-top: solid 1px #aaaaaa;
+    padding: 12px 0 12px 0;
+  }
+  .footer .container .top nav ul li:before {
+    display: none;
+  }
+  .footer .container .top nav ul li a .en {
+    font-size: 6vw;
+  }
+  .footer .container .top nav ul li a .jp {
+    font-size: 3.75vw;
+    padding: 0 0 0 5px;
+  }
+  .footer .container .top nav ul li:last-child {
+    border-bottom: solid 1px #aaaaaa;
+    padding: 12px 0 12px 0;
+  }
+  .footer .container .top nav ul li:last-child:before {
+    display: none;
+  }
+  .footer .container .privacy {
+    padding: 60px 0 20px 0;
+  }
+  .footer .container .privacy p a {
+    letter-spacing: 6px;
+    font-size: 4vw;
+  }
+  .footer .container .privacy p a::before {
+    left: -4vw;
+    top: 50%;
+    transform: translate(0, -50%);
+    border-width: 1.4vw 0 1.4vw 2.8vw;
+  }
+  .footer .container .copyright {
+    padding: 25px 0 0 0;
+  }
+  .footer .container .copyright small {
+    line-height: 1.35;
+    letter-spacing: 2px;
+    font-size: 2.95vw;
+  }
+} /* 767px responsive-closed */
+/*end ----------------------------------------------------------------------------
+□ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ 
+**********************************************************************************/
+/*===================================================================================================
+□ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ 
+
+〇 FEATURE 〇
+
+□ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ 
+====================================================================================================*/
+.feature {
+  overflow: hidden;
+  padding: 100px 0 0 0;
+}
+.feature .container {
+  padding: 0 0 0 0;
+}
+.feature .container .title {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  max-width: 1920px;
+  height: 650px;
+  margin: 0 auto 0;
+}
+.feature .container .title .text {
+  position: relative;
+  z-index: 2;
+  padding: 0 0 0 6%;
+}
+.feature .container .title .text h3 .catch {
+  font-family: "Cinzel";
+  font-weight: 500;
+  letter-spacing: 10px;
+  font-size: 90px;
+}
+.feature .container .title .text h2 {
+  margin: 60px 0 0 0;
+}
+.feature .container .title .text h2 .catch {
+  font-weight: 600;
+  line-height: 1.8;
+  font-size: 24px;
+}
+.feature .container .title .thumb {
+  position: absolute;
+  z-index: 1;
+  right: 0;
+  top: 0;
+  width: 60%;
+  height: 650px;
+}
+.feature .container .title .thumb img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.feature .container .box-wrapper {
+  max-width: 1920px;
+  margin: 0 auto 0;
+  padding: 60px 6% 0 6%;
+}
+.feature .container .box-wrapper .box {
+  position: relative;
+  flex-wrap: wrap;
+  margin: 60px 0 0 0;
+}
+.feature .container .box-wrapper .box .top {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.feature .container .box-wrapper .box .top .thumb {
+  position: relative;
+  z-index: 3;
+  width: 600px;
+  height: 600px;
+}
+.feature .container .box-wrapper .box .top .thumb img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.feature .container .box-wrapper .box .top .thumb .number {
+  position: absolute;
+  right: 10px;
+  top: -40px;
+}
+.feature .container .box-wrapper .box .top .thumb .number p {
+  display: inline-block;
+  font-family: "Cinzel";
+  font-weight: 600;
+  line-height: 1;
+  opacity: 0.7;
+  background: linear-gradient(90deg, #cbcbb6 0%, #d6d2b6 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  letter-spacing: 4px;
+  font-size: 100px;
+}
+.feature .container .box-wrapper .box .top .text {
+  position: relative;
+  padding: 0 0 0 70px;
+}
+.feature .container .box-wrapper .box .top .text .en {
+  position: relative;
+  z-index: 2;
+}
+.feature .container .box-wrapper .box .top .text .en p {
+  font-family: "Cinzel";
+  font-weight: 500;
+  line-height: 1.1;
+  letter-spacing: 14px;
+  font-size: 85px;
+}
+.feature .container .box-wrapper .box .top .text h3 {
+  position: relative;
+  z-index: 2;
+  margin: 30px 0 0 0;
+}
+.feature .container .box-wrapper .box .top .text h3 .catch {
+  line-height: 1.8;
+  letter-spacing: 3px;
+  font-size: 30px;
+}
+.feature .container .box-wrapper .box .top .text ul {
+  position: relative;
+  z-index: 2;
+  margin: 30px 0 0 0;
+}
+.feature .container .box-wrapper .box .top .text ul li {
+  background: url(../images/gems.svg) no-repeat 0 center;
+  background-size: 20px auto;
+  font-size: 20px;
+  padding: 5px 20px 5px 30px;
+}
+.feature .container .box-wrapper .box .top .text .geometory {
+  position: absolute;
+  z-index: 1;
+  opacity: 0.4;
+  right: 0;
+  bottom: 0;
+  width: 400px;
+}
+.feature .container .box-wrapper .box .top .text .geometory img {
+  animation: 6s fuwafuwa infinite;
+}
+@keyframes fuwafuwa {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-40px);
+  }
+}
+.feature .container .box-wrapper .box .bottom {
+  margin: 30px auto 0;
+}
+.feature .container .box-wrapper .box .bottom .sentence {
+  position: relative;
+  z-index: 3;
+  width: 100%;
+}
+.feature .container .box-wrapper .box .bottom .sentence p {
+  line-height: 2;
+  font-size: 18px;
+  padding: 10px 0 10px 0;
+}
+.feature .container .box-wrapper .box:nth-child(2n) .top {
+  flex-direction: row-reverse;
+}
+.feature .container .box-wrapper .box:nth-child(2n) .top .text {
+  padding: 0 70px 0 0;
+}
+.feature .container .box-wrapper .box:nth-child(2n) .top .text .geometory {
+  right: 70px;
+}
+
+/**********************************************************************************
+□ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □  
+
+◆	Stylesheet: 1024px～1280px(iPad縦からiPad横)までのモニタで適用	◆
+
+start----------------------------------------------------------------------------*/
+@media screen and (min-width: 1024px) and (max-width: 1280px) {
+  .feature {
+    padding: 100px 0 0 0;
+  }
+  .feature .container {
+    padding: 0 0 0 0;
+  }
+  .feature .container .title {
+    max-width: 1920px;
+    height: 600px;
+    margin: 0 auto 0;
+  }
+  .feature .container .title .text {
+    padding: 0 0 0 6%;
+  }
+  .feature .container .title .text h3 .catch {
+    letter-spacing: 10px;
+    font-size: 75px;
+  }
+  .feature .container .title .text h2 {
+    margin: 60px 0 0 0;
+  }
+  .feature .container .title .text h2 .catch {
+    line-height: 1.8;
+    font-size: 24px;
+  }
+  .feature .container .title .thumb {
+    width: 60%;
+    height: 600px;
+  }
+  .feature .container .title .thumb img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+  .feature .container .box-wrapper {
+    max-width: 100%;
+    padding: 60px 0 0 0;
+  }
+  .feature .container .box-wrapper .box {
+    margin: 60px 0 0 0;
+  }
+  .feature .container .box-wrapper .box .top .thumb {
+    width: 50vw;
+    height: 50vw;
+  }
+  .feature .container .box-wrapper .box .top .thumb img {
+    width: 100%;
+    height: 100%;
+  }
+  .feature .container .box-wrapper .box .top .thumb .number {
+    right: 10px;
+    top: -40px;
+  }
+  .feature .container .box-wrapper .box .top .thumb .number p {
+    line-height: 1;
+    opacity: 0.7;
+    letter-spacing: 4px;
+    font-size: 90px;
+  }
+  .feature .container .box-wrapper .box .top .text {
+    width: calc(100% - 50vw);
+    padding: 0 0 0 35px;
+  }
+  .feature .container .box-wrapper .box .top .text .en p {
+    line-height: 1.1;
+    letter-spacing: 10px;
+    font-size: 72px;
+  }
+  .feature .container .box-wrapper .box .top .text h3 {
+    margin: 30px 0 0 0;
+  }
+  .feature .container .box-wrapper .box .top .text h3 .catch {
+    line-height: 1.8;
+    letter-spacing: 3px;
+    font-size: 30px;
+  }
+  .feature .container .box-wrapper .box .top .text ul {
+    margin: 30px 0 0 0;
+  }
+  .feature .container .box-wrapper .box .top .text ul li {
+    background: url(../images/gems.svg) no-repeat 0 center;
+    background-size: 20px auto;
+    font-size: 20px;
+    padding: 5px 20px 5px 30px;
+  }
+  .feature .container .box-wrapper .box .top .text .geometory {
+    opacity: 0.4;
+    right: 0;
+    bottom: 0;
+    width: 400px;
+  }
+  .feature .container .box-wrapper .box .bottom {
+    margin: 30px auto 0;
+  }
+  .feature .container .box-wrapper .box .bottom .sentence {
+    width: 100%;
+    padding: 0 4% 0 4%;
+  }
+  .feature .container .box-wrapper .box .bottom .sentence p {
+    line-height: 2;
+    font-size: 18px;
+    padding: 10px 0 10px 0;
+  }
+  .feature .container .box-wrapper .box:nth-child(2n) .top .text {
+    padding: 0 35px 0 4%;
+  }
+  .feature .container .box-wrapper .box:nth-child(2n) .top .text .geometory {
+    right: 70px;
+  }
+} /* 1024px～1280px responsive-close */
+/**********************************************************************************
+□ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □  
+
+◆	Stylesheet: 768px～1023px(iPad縦からiPad横)までのモニタで適用	◆
+
+start----------------------------------------------------------------------------*/
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .feature {
+    padding: 100px 0 0 0;
+  }
+  .feature .container {
+    padding: 0 0 0 0;
+  }
+  .feature .container .title {
+    max-width: 1920px;
+    height: 600px;
+    margin: 0 auto 0;
+  }
+  .feature .container .title .text {
+    padding: 0 0 0 6%;
+  }
+  .feature .container .title .text h3 .catch {
+    letter-spacing: 10px;
+    font-size: 72px;
+  }
+  .feature .container .title .text h2 {
+    margin: 60px 0 0 0;
+  }
+  .feature .container .title .text h2 .catch {
+    line-height: 1.8;
+    font-size: 23px;
+  }
+  .feature .container .title .thumb {
+    width: 60%;
+    height: 600px;
+  }
+  .feature .container .title .thumb img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+  .feature .container .box-wrapper {
+    max-width: 100%;
+    padding: 60px 0 0 0;
+  }
+  .feature .container .box-wrapper .box {
+    margin: 60px 0 0 0;
+  }
+  .feature .container .box-wrapper .box .top {
+    display: block;
+  }
+  .feature .container .box-wrapper .box .top .thumb {
+    width: 100%;
+    height: 400px;
+  }
+  .feature .container .box-wrapper .box .top .thumb img {
+    width: 100%;
+    height: 100%;
+  }
+  .feature .container .box-wrapper .box .top .thumb .number {
+    right: 10px;
+    top: -40px;
+  }
+  .feature .container .box-wrapper .box .top .thumb .number p {
+    line-height: 1;
+    opacity: 0.7;
+    letter-spacing: 4px;
+    font-size: 90px;
+  }
+  .feature .container .box-wrapper .box .top .text {
+    width: calc(100% - 0vw);
+    padding: 30px 4% 0 4%;
+  }
+  .feature .container .box-wrapper .box .top .text .en p {
+    line-height: 1.1;
+    letter-spacing: 10px;
+    font-size: 72px;
+  }
+  .feature .container .box-wrapper .box .top .text h3 {
+    margin: 30px 0 0 0;
+  }
+  .feature .container .box-wrapper .box .top .text h3 .catch {
+    line-height: 1.8;
+    letter-spacing: 3px;
+    font-size: 30px;
+  }
+  .feature .container .box-wrapper .box .top .text ul {
+    margin: 30px 0 0 0;
+  }
+  .feature .container .box-wrapper .box .top .text ul li {
+    background: url(../images/gems.svg) no-repeat 0 center;
+    background-size: 20px auto;
+    font-size: 20px;
+    padding: 5px 20px 5px 30px;
+  }
+  .feature .container .box-wrapper .box .top .text .geometory {
+    opacity: 0.4;
+    right: 0;
+    bottom: 0;
+    width: 400px;
+  }
+  .feature .container .box-wrapper .box .bottom {
+    margin: 30px auto 0;
+  }
+  .feature .container .box-wrapper .box .bottom .sentence {
+    width: 100%;
+    padding: 0 4% 0 4%;
+  }
+  .feature .container .box-wrapper .box .bottom .sentence p {
+    line-height: 2;
+    font-size: 18px;
+    padding: 10px 0 10px 0;
+  }
+  .feature .container .box-wrapper .box:nth-child(2n) .top .text {
+    padding: 30px 4% 0 4%;
+  }
+  .feature .container .box-wrapper .box:nth-child(2n) .top .text .geometory {
+    right: 70px;
+  }
+} /* 768px～1023px responsive-closed */
+/*end ----------------------------------------------------------------------------
+□ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ 
+**********************************************************************************/
+/**********************************************************************************
+ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ 
+
+◆	Stylesheet: 767pxまで(スマホ)のモニタで適用	◆
+
+□ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ 
+start----------------------------------------------------------------------------*/
+@media screen and (max-width: 767px) {
+  .feature {
+    padding: 100px 0 0 0;
+  }
+  .feature .container {
+    padding: 0 0 0 0;
+  }
+  .feature .container .title {
+    max-width: 1920px;
+    height: 500px;
+    margin: 0 auto 0;
+  }
+  .feature .container .title .text {
+    padding: 0 0 0 5%;
+  }
+  .feature .container .title .text h3 .catch {
+    letter-spacing: 4px;
+    font-size: 11vw;
+  }
+  .feature .container .title .text h2 {
+    margin: 60px 0 0 0;
+  }
+  .feature .container .title .text h2 .catch {
+    line-height: 1.8;
+    font-size: 5vw;
+  }
+  .feature .container .title .thumb {
+    width: 80%;
+    height: 500px;
+  }
+  .feature .container .title .thumb img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+  .feature .container .box-wrapper {
+    max-width: 100%;
+    padding: 60px 0 0 0;
+  }
+  .feature .container .box-wrapper .box {
+    margin: 60px 0 0 0;
+  }
+  .feature .container .box-wrapper .box .top {
+    display: block;
+  }
+  .feature .container .box-wrapper .box .top .thumb {
+    width: 100%;
+    height: 400px;
+  }
+  .feature .container .box-wrapper .box .top .thumb img {
+    width: 100%;
+    height: 100%;
+  }
+  .feature .container .box-wrapper .box .top .thumb .number {
+    right: 10px;
+    top: -5vw;
+  }
+  .feature .container .box-wrapper .box .top .thumb .number p {
+    line-height: 1;
+    opacity: 0.7;
+    letter-spacing: 4px;
+    font-size: 18vw;
+  }
+  .feature .container .box-wrapper .box .top .text {
+    width: calc(100% - 0vw);
+    padding: 30px 4% 0 4%;
+  }
+  .feature .container .box-wrapper .box .top .text .en p {
+    line-height: 1.1;
+    letter-spacing: 10px;
+    font-size: 9vw;
+  }
+  .feature .container .box-wrapper .box .top .text h3 {
+    margin: 30px 0 0 0;
+  }
+  .feature .container .box-wrapper .box .top .text h3 .catch {
+    line-height: 1.8;
+    letter-spacing: 2px;
+    font-size: 6.5vw;
+  }
+  .feature .container .box-wrapper .box .top .text ul {
+    margin: 30px 0 0 0;
+  }
+  .feature .container .box-wrapper .box .top .text ul li {
+    background: url(../images/gems.svg) no-repeat 0 center;
+    background-size: 3.5vw auto;
+    font-size: 4.5vw;
+    padding: 5px 20px 5px 4.25vw;
+  }
+  .feature .container .box-wrapper .box .top .text .geometory {
+    opacity: 0.4;
+    right: 0;
+    bottom: 0;
+    width: 40vw;
+  }
+  .feature .container .box-wrapper .box .bottom {
+    margin: 30px auto 0;
+  }
+  .feature .container .box-wrapper .box .bottom .sentence {
+    width: 100%;
+    padding: 0 4% 0 4%;
+  }
+  .feature .container .box-wrapper .box .bottom .sentence p {
+    line-height: 2;
+    font-size: 4vw;
+    padding: 10px 0 10px 0;
+  }
+  .feature .container .box-wrapper .box:nth-child(2n) .top .text {
+    padding: 30px 4% 0 4%;
+  }
+  .feature .container .box-wrapper .box:nth-child(2n) .top .text .geometory {
+    right: 70px;
+  }
+} /* 767px responsive-closed */
+/*end ----------------------------------------------------------------------------
+□ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ 
+**********************************************************************************/
+/*===================================================================================================
+□ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ 
+
+〇 MERIT 〇
+
+□ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ 
+====================================================================================================*/
+.merit {
+  overflow: hidden;
+  padding: 100px 0 100px 0;
+}
+.merit .container .title h3 .catch {
+  font-family: "Cinzel";
+  font-weight: 500;
+  letter-spacing: 10px;
+  text-align: center;
+  font-size: 90px;
+}
+.merit .container .title h2 {
+  margin: 10px 0 0 0;
+}
+.merit .container .title h2 .catch {
+  font-weight: 600;
+  line-height: 1.8;
+  text-align: center;
+  font-size: 24px;
+}
+.merit .container .box-wrapper {
+  padding: 30px 0 0 0;
+}
+.merit .container .box-wrapper .box {
+  margin: 70px 0 0 0;
+}
+.merit .container .box-wrapper .box .thumb-wrapper {
+  display: flex;
+  line-height: 0;
+}
+.merit .container .box-wrapper .box .thumb-wrapper .thumb {
+  width: 50%;
+  height: 450px;
+}
+.merit .container .box-wrapper .box .thumb-wrapper .thumb img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.merit .container .box-wrapper .box .text {
+  position: relative;
+  max-width: 1920px;
+  margin: 0 auto 0;
+}
+.merit .container .box-wrapper .box .text .back {
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  top: 0;
+}
+.merit .container .box-wrapper .box .text .back p {
+  color: #bcbcbc;
+  font-family: "Cinzel";
+  font-weight: 500;
+  line-height: 1;
+  opacity: 0.4;
+  letter-spacing: 25px;
+  font-size: 130px;
+}
+.merit .container .box-wrapper .box .text .inset {
+  position: relative;
+  z-index: 2;
+  max-width: 1280px;
+  margin: 0 auto 0;
+  padding: 100px 2% 0 2%;
+}
+.merit .container .box-wrapper .box .text .inset .semi-title {
+  display: flex;
+  align-items: center;
+}
+.merit .container .box-wrapper .box .text .inset .semi-title .number {
+  position: relative;
+  font-family: "Cinzel";
+  font-weight: 600;
+  line-height: 1;
+  top: 3px;
+  font-size: 22px;
+}
+.merit .container .box-wrapper .box .text .inset .semi-title h3 {
+  padding: 0 0 0 10px;
+}
+.merit .container .box-wrapper .box .text .inset .semi-title h3 .catch {
+  line-height: 1.1;
+  letter-spacing: 5px;
+  font-size: 45px;
+}
+.merit .container .box-wrapper .box .text .inset .sentence {
+  margin: 60px 0 0 15%;
+}
+.merit .container .box-wrapper .box .text .inset .sentence p {
+  line-height: 2;
+  font-size: 18px;
+  padding: 10px 0 10px 0;
+}
+
+/**********************************************************************************
+□ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □  
+
+◆	Stylesheet: 1024px～1280px(iPad縦からiPad横)までのモニタで適用	◆
+
+start----------------------------------------------------------------------------*/
+@media screen and (min-width: 1024px) and (max-width: 1280px) {
+  .merit {
+    padding: 100px 0 100px 0;
+  }
+  .merit .container .title h3 .catch {
+    letter-spacing: 10px;
+    font-size: 80px;
+  }
+  .merit .container .title h2 {
+    margin: 10px 0 0 0;
+  }
+  .merit .container .title h2 .catch {
+    line-height: 1.8;
+    font-size: 24px;
+  }
+  .merit .container .box-wrapper {
+    padding: 30px 0 0 0;
+  }
+  .merit .container .box-wrapper .box {
+    margin: 70px 0 0 0;
+  }
+  .merit .container .box-wrapper .box .thumb-wrapper .thumb {
+    width: 50%;
+    height: 400px;
+  }
+  .merit .container .box-wrapper .box .thumb-wrapper .thumb img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+  .merit .container .box-wrapper .box .text {
+    max-width: 100%;
+    margin: 0 auto 0;
+  }
+  .merit .container .box-wrapper .box .text .back {
+    left: 0;
+    top: 0;
+  }
+  .merit .container .box-wrapper .box .text .back p {
+    line-height: 1;
+    opacity: 0.4;
+    letter-spacing: 25px;
+    font-size: 120px;
+  }
+  .merit .container .box-wrapper .box .text .inset {
+    margin: 0 auto 0;
+    padding: 100px 4% 0 4%;
+  }
+  .merit .container .box-wrapper .box .text .inset .semi-title .number {
+    line-height: 1;
+    top: 3px;
+    font-size: 22px;
+  }
+  .merit .container .box-wrapper .box .text .inset .semi-title h3 {
+    padding: 0 0 0 10px;
+  }
+  .merit .container .box-wrapper .box .text .inset .semi-title h3 .catch {
+    line-height: 1.1;
+    letter-spacing: 5px;
+    font-size: 42px;
+  }
+  .merit .container .box-wrapper .box .text .inset .sentence {
+    margin: 60px 0 0 15%;
+  }
+  .merit .container .box-wrapper .box .text .inset .sentence p {
+    line-height: 2;
+    font-size: 18px;
+    padding: 10px 0 10px 0;
+  }
+} /* 1024px～1280px responsive-close */
+/**********************************************************************************
+□ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □  
+
+◆	Stylesheet: 768px～1023px(iPad縦からiPad横)までのモニタで適用	◆
+
+start----------------------------------------------------------------------------*/
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .merit {
+    padding: 100px 0 100px 0;
+  }
+  .merit .container .title h3 .catch {
+    letter-spacing: 6px;
+    font-size: 77px;
+  }
+  .merit .container .title h2 {
+    margin: 10px 0 0 0;
+  }
+  .merit .container .title h2 .catch {
+    line-height: 1.8;
+    font-size: 24px;
+  }
+  .merit .container .box-wrapper {
+    padding: 30px 0 0 0;
+  }
+  .merit .container .box-wrapper .box {
+    margin: 70px 0 0 0;
+  }
+  .merit .container .box-wrapper .box .thumb-wrapper .thumb {
+    width: 50%;
+    height: 400px;
+  }
+  .merit .container .box-wrapper .box .thumb-wrapper .thumb img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+  .merit .container .box-wrapper .box .text {
+    max-width: 100%;
+    margin: 0 auto 0;
+  }
+  .merit .container .box-wrapper .box .text .back {
+    left: 0;
+    top: 0;
+  }
+  .merit .container .box-wrapper .box .text .back p {
+    line-height: 1;
+    opacity: 0.4;
+    letter-spacing: 20px;
+    font-size: 100px;
+  }
+  .merit .container .box-wrapper .box .text .inset {
+    margin: 0 auto 0;
+    padding: 100px 4% 0 4%;
+  }
+  .merit .container .box-wrapper .box .text .inset .semi-title .number {
+    line-height: 1;
+    top: 3px;
+    font-size: 21px;
+  }
+  .merit .container .box-wrapper .box .text .inset .semi-title h3 {
+    padding: 0 0 0 10px;
+  }
+  .merit .container .box-wrapper .box .text .inset .semi-title h3 .catch {
+    line-height: 1.1;
+    letter-spacing: 5px;
+    font-size: 40px;
+  }
+  .merit .container .box-wrapper .box .text .inset .sentence {
+    margin: 60px 0 0 15%;
+  }
+  .merit .container .box-wrapper .box .text .inset .sentence p {
+    line-height: 2;
+    font-size: 18px;
+    padding: 10px 0 10px 0;
+  }
+} /* 768px～1023px responsive-closed */
+/*end ----------------------------------------------------------------------------
+□ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ 
+**********************************************************************************/
+/**********************************************************************************
+ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ 
+
+◆	Stylesheet: 767pxまで(スマホ)のモニタで適用	◆
+
+□ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ 
+start----------------------------------------------------------------------------*/
+@media screen and (max-width: 767px) {
+  .merit {
+    padding: 50px 0 50px 0;
+  }
+  .merit .container .title h3 .catch {
+    letter-spacing: 4px;
+    font-size: 9.25vw;
+  }
+  .merit .container .title h2 {
+    margin: 10px 0 0 0;
+  }
+  .merit .container .title h2 .catch {
+    line-height: 1.8;
+    font-size: 6vw;
+  }
+  .merit .container .box-wrapper {
+    padding: 10px 0 0 0;
+  }
+  .merit .container .box-wrapper .box {
+    margin: 50px 0 0 0;
+  }
+  .merit .container .box-wrapper .box .thumb-wrapper {
+    display: block;
+  }
+  .merit .container .box-wrapper .box .thumb-wrapper .thumb {
+    width: 100%;
+    height: 200px;
+  }
+  .merit .container .box-wrapper .box .thumb-wrapper .thumb img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+  .merit .container .box-wrapper .box .text {
+    max-width: 100%;
+    margin: 0 auto 0;
+  }
+  .merit .container .box-wrapper .box .text .back {
+    left: 0;
+    top: 0;
+  }
+  .merit .container .box-wrapper .box .text .back p {
+    line-height: 1;
+    opacity: 0.4;
+    letter-spacing: 2vw;
+    font-size: 14vw;
+  }
+  .merit .container .box-wrapper .box .text .inset {
+    margin: 0 auto 0;
+    padding: 15vw 5% 0 5%;
+  }
+  .merit .container .box-wrapper .box .text .inset .semi-title {
+    display: block;
+  }
+  .merit .container .box-wrapper .box .text .inset .semi-title .number {
+    line-height: 1;
+    top: 3px;
+    font-size: 6vw;
+  }
+  .merit .container .box-wrapper .box .text .inset .semi-title h3 {
+    padding: 10px 0 0 0;
+  }
+  .merit .container .box-wrapper .box .text .inset .semi-title h3 .catch {
+    line-height: 1.5;
+    letter-spacing: 2px;
+    font-size: 7vw;
+  }
+  .merit .container .box-wrapper .box .text .inset .sentence {
+    margin: 40px 0 0 10%;
+  }
+  .merit .container .box-wrapper .box .text .inset .sentence p {
+    line-height: 2;
+    font-size: 4vw;
+    padding: 10px 0 10px 0;
+  }
+} /* 767px responsive-closed */
+/*end ----------------------------------------------------------------------------
+□ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ 
+**********************************************************************************/
+/*===================================================================================================
+□ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ 
+
+〇 FLOW 〇
+
+□ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ 
+====================================================================================================*/
+.flow {
+  overflow: hidden;
+  padding: 60px 0 60px 0;
+}
+.flow .container .title h3 .catch {
+  text-align: center;
+  font-family: "Cinzel";
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: 10px;
+  font-size: 90px;
+}
+.flow .container .title h2 {
+  margin: 10px 0 0 0;
+}
+.flow .container .title h2 .catch {
+  text-align: center;
+  line-height: 1.25;
+  font-weight: 600;
+  font-size: 24px;
+}
+.flow .container .box-wrapper {
+  max-width: 1680px;
+  width: 96%;
+  margin: 80px auto 0;
+  display: flex;
+  align-items: stretch;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.flow .container .box-wrapper .box {
+  position: relative;
+  background: linear-gradient(30deg, rgba(231, 237, 242, 0.9) 0%, rgba(244, 248, 252, 0.9) 35%, rgba(255, 255, 255, 0.9) 100%);
+  box-shadow: rgba(236, 236, 236, 0.2) 0 7px 29px 0;
+  margin: 30px 0 0 0;
+  width: 45%;
+}
+.flow .container .box-wrapper .box .inner {
+  display: flex;
+  align-items: center;
+  padding: 30px 45px 30px 45px;
+}
+.flow .container .box-wrapper .box .inner .number {
+  background-color: #b8c6db;
+  background-image: linear-gradient(315deg, #b8c6db 0%, #f5f7fa 74%);
+  box-shadow: rgba(236, 236, 236, 0.2) 0 7px 29px 0;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #757485;
+  top: -20px;
+}
+.flow .container .box-wrapper .box .inner .number p {
+  font-family: "Cinzel";
+  font-weight: 600;
+  text-align: center;
+  line-height: 1.2;
+}
+.flow .container .box-wrapper .box .inner .number p.sub {
+  font-size: 20px;
+}
+.flow .container .box-wrapper .box .inner .number p.main {
+  font-size: 30px;
+}
+.flow .container .box-wrapper .box .inner .text {
+  width: calc(100% - 100px);
+  padding: 0 0 0 45px;
+}
+.flow .container .box-wrapper .box .inner .text h3 .catch {
+  font-size: 30px;
+}
+.flow .container .box-wrapper .box .inner .text .sentence {
+  margin: 10px 0 0 0;
+}
+.flow .container .box-wrapper .box .inner .text .sentence p {
+  color: #343434;
+  line-height: 1.8;
+  padding: 10px 0 10px 0;
+  font-size: 18px;
+}
+.flow .container .box-wrapper .arrow {
+  width: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.flow .container .box-wrapper .arrow img {
+  transform: rotate(-90deg);
+}
+
+/**********************************************************************************
+□ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □  
+
+◆	Stylesheet: 1024px～1280px(iPad縦からiPad横)までのモニタで適用	◆
+
+start----------------------------------------------------------------------------*/
+@media screen and (min-width: 1024px) and (max-width: 1280px) {
+  .flow {
+    padding: 60px 0 60px 0;
+  }
+  .flow .container .title h3 .catch {
+    line-height: 1;
+    letter-spacing: 10px;
+    font-size: 77px;
+  }
+  .flow .container .title h2 {
+    margin: 10px 0 0 0;
+  }
+  .flow .container .title h2 .catch {
+    line-height: 1.25;
+    font-size: 24px;
+  }
+  .flow .container .box-wrapper {
+    max-width: 94%;
+    margin: 0 auto 0;
+    padding: 20px 0 0 0;
+  }
+  .flow .container .box-wrapper .box {
+    margin: 50px 0 0 0;
+  }
+  .flow .container .box-wrapper .box .inner {
+    padding: 5px 30px 25px 30px;
+    display: block;
+  }
+  .flow .container .box-wrapper .box .inner .number {
+    width: 7vw;
+    height: 7vw;
+    margin: -20px auto 0;
+    line-height: 1.2;
+  }
+  .flow .container .box-wrapper .box .inner .number p.sub {
+    font-size: 1.85vw;
+  }
+  .flow .container .box-wrapper .box .inner .number p.main {
+    font-size: 2.5vw;
+  }
+  .flow .container .box-wrapper .box .inner .text {
+    width: 100%;
+    padding: 20px 0 0 0px;
+  }
+  .flow .container .box-wrapper .box .inner .text h3 .catch {
+    font-size: 24px;
+    text-align: center;
+  }
+  .flow .container .box-wrapper .box .inner .text .sentence {
+    margin: 5px 0 0 0;
+  }
+  .flow .container .box-wrapper .box .inner .text .sentence p {
+    line-height: 1.8;
+    padding: 10px 0 10px 0;
+    font-size: 1.8vw;
+  }
+  .flow .container .box-wrapper .arrow {
+    width: 5%;
+    margin: 0px auto 0px;
+  }
+} /* 1024px～1280px responsive-close */
+/**********************************************************************************
+□ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □  
+
+◆	Stylesheet: 768px～1023px(iPad縦からiPad横)までのモニタで適用	◆
+
+start----------------------------------------------------------------------------*/
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .flow {
+    padding: 60px 0 60px 0;
+  }
+  .flow .container .title h3 .catch {
+    line-height: 1;
+    letter-spacing: 10px;
+    font-size: 77px;
+  }
+  .flow .container .title h2 {
+    margin: 10px 0 0 0;
+  }
+  .flow .container .title h2 .catch {
+    line-height: 1.25;
+    font-size: 24px;
+  }
+  .flow .container .box-wrapper {
+    max-width: 94%;
+    margin: 0 auto 0;
+    padding: 10px 0 0 0;
+  }
+  .flow .container .box-wrapper .box {
+    margin: 50px auto 0;
+  }
+  .flow .container .box-wrapper .box .inner {
+    padding: 5px 25px 25px 25px;
+    display: block;
+  }
+  .flow .container .box-wrapper .box .inner .number {
+    width: 8vw;
+    height: 8vw;
+    margin: -20px auto 0;
+    line-height: 1.2;
+  }
+  .flow .container .box-wrapper .box .inner .number p.sub {
+    font-size: 2vw;
+  }
+  .flow .container .box-wrapper .box .inner .number p.main {
+    font-size: 2.5vw;
+  }
+  .flow .container .box-wrapper .box .inner .text {
+    width: calc(100% - 0vw);
+    padding: 20px 0 0 0px;
+  }
+  .flow .container .box-wrapper .box .inner .text h3 .catch {
+    font-size: 3.15vw;
+    text-align: center;
+  }
+  .flow .container .box-wrapper .box .inner .text .sentence {
+    margin: 1px 0 0 0;
+  }
+  .flow .container .box-wrapper .box .inner .text .sentence p {
+    line-height: 1.8;
+    padding: 10px 0 10px 0;
+    font-size: 1.8vw;
+  }
+  .flow .container .box-wrapper .arrow {
+    width: 5%;
+    margin: 0px auto 0px;
+  }
+} /* 768px～1023px responsive-closed */
+/*end ----------------------------------------------------------------------------
+□ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ 
+**********************************************************************************/
+/**********************************************************************************
+ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ 
+
+◆	Stylesheet: 767pxまで(スマホ)のモニタで適用	◆
+
+□ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ 
+start----------------------------------------------------------------------------*/
+@media screen and (max-width: 767px) {
+  .flow {
+    padding: 60px 0 60px 0;
+  }
+  .flow .container .box-wrapper {
+    max-width: 94%;
+    margin: 0 auto 0;
+    display: block;
+  }
+  .flow .container .box-wrapper .box {
+    margin: 0px auto 0;
+    width: 100%;
+  }
+  .flow .container .box-wrapper .box .inner {
+    display: block;
+    padding: 30px 20px 30px 20px;
+  }
+  .flow .container .box-wrapper .box .inner .number {
+    width: 20vw;
+    height: 20vw;
+    top: -20px;
+    line-height: 1.2;
+  }
+  .flow .container .box-wrapper .box .inner .number p.sub {
+    font-size: 4vw;
+  }
+  .flow .container .box-wrapper .box .inner .number p.main {
+    font-size: 6vw;
+  }
+  .flow .container .box-wrapper .box .inner .text {
+    width: 100%;
+    padding: 20px 0 0 0;
+  }
+  .flow .container .box-wrapper .box .inner .text h3 .catch {
+    font-size: 6vw;
+  }
+  .flow .container .box-wrapper .box .inner .text .sentence {
+    margin: 10px 0 0 0;
+  }
+  .flow .container .box-wrapper .box .inner .text .sentence p {
+    line-height: 1.8;
+    padding: 10px 0 10px 0;
+    font-size: 4vw;
+  }
+  .flow .container .box-wrapper .arrow {
+    width: 30vw;
+    margin: 30px auto 30px;
+  }
+  .flow .container .box-wrapper .arrow img {
+    transform: rotate(0deg);
+  }
+} /* 767px responsive-closed */
+/*end ----------------------------------------------------------------------------
+□ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ 
+**********************************************************************************/
+/*===================================================================================================
+□ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ 
+
+〇 WORKS 〇
+
+□ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ 
+====================================================================================================*/
+.works {
+  overflow: hidden;
+  position: relative;
+  color: #343434;
+}
+.works .bg {
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+.works .title {
+  position: relative;
+  z-index: 2;
+  padding: 60px 0 60px 0;
+}
+.works .title h3 .catch {
+  font-family: "Cinzel";
+  font-weight: 500;
+  line-height: 1.25;
+  letter-spacing: 5px;
+  text-align: center;
+  font-size: 80px;
+}
+.works .title h2 {
+  margin: 5px 0 0 0;
+}
+.works .title h2 .catch {
+  font-weight: 500;
+  letter-spacing: 4px;
+  text-align: center;
+  font-size: 28px;
+}
+.works .container {
+  position: relative;
+  z-index: 2;
+  width: 94%;
+  max-width: 1480px;
+  margin: 40px auto 0;
+  padding: 0 0 70px 0;
+}
+.works .container .splide .splide__track .splide__list .splide__slide {
+  position: relative;
+  color: #000000;
+  box-shadow: rgba(153, 159, 163, 0.2) 0 7px 29px 0;
+  background: #ffffff;
+  cursor: pointer;
+}
+.works .container .splide .splide__track .splide__list .splide__slide .thumb {
+  line-height: 0;
+  width: 100%;
+  height: 400px;
+}
+.works .container .splide .splide__track .splide__list .splide__slide .thumb img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.works .container .splide .splide__track .splide__list .splide__slide .text {
+  padding: 30px 45px 30px 45px;
+}
+.works .container .splide .splide__track .splide__list .splide__slide .text .category p {
+  display: inline-block;
+  font-family: "Cinzel";
+  font-weight: 600;
+  background: linear-gradient(90deg, #cbcbb6 0%, #d6d2b6 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  letter-spacing: 4px;
+  font-size: 25px;
+}
+.works .container .splide .splide__track .splide__list .splide__slide .text h3 .catch {
+  font-size: 22px;
+}
+.works .container .splide .splide__track .splide__list .splide__slide .text h4 .catch {
+  font-size: 20px;
+}
+.works .container .splide .splide__track .splide__list .splide__slide.is-active {
+  padding: 0 0 0 0;
+}
+.works .container .splide .splide__track .splide__progress__bar {
+  background: #cccccc;
+  height: 3px;
+}
+
+/**********************************************************************************
+□ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □  
+
+◆	Stylesheet: 1024px～1280px(iPad縦からiPad横)までのモニタで適用	◆
+
+start----------------------------------------------------------------------------*/
+@media screen and (min-width: 1024px) and (max-width: 1280px) {
+  .works .bg {
+    left: 0;
+    top: 0;
+  }
+  .works .title {
+    padding: 60px 0 60px 0;
+  }
+  .works .title h3 .catch {
+    line-height: 1.25;
+    letter-spacing: 5px;
+    font-size: 80px;
+  }
+  .works .title h2 {
+    margin: 5px 0 0 0;
+  }
+  .works .title h2 .catch {
+    letter-spacing: 4px;
+    font-size: 28px;
+  }
+  .works .container {
+    width: 96%;
+    max-width: 1480px;
+    margin: 40px auto 0;
+    padding: 0 0 70px 0;
+  }
+  .works .container .splide .splide__track .splide__list .splide__slide {
+    width: 50%;
+  }
+  .works .container .splide .splide__track .splide__list .splide__slide .thumb {
+    line-height: 0;
+    width: 100%;
+    height: 400px;
+  }
+  .works .container .splide .splide__track .splide__list .splide__slide .thumb img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+  .works .container .splide .splide__track .splide__list .splide__slide .text {
+    padding: 30px 30px 30px 30px;
+  }
+  .works .container .splide .splide__track .splide__list .splide__slide .text .category p {
+    letter-spacing: 4px;
+    font-size: 24px;
+  }
+  .works .container .splide .splide__track .splide__list .splide__slide .text .category h3 .catch {
+    font-size: 21px;
+  }
+  .works .container .splide .splide__track .splide__list .splide__slide .text .category h4 .catch {
+    font-size: 19px;
+  }
+  .works .container .splide .splide__track .splide__list .splide__slide.is-active {
+    padding: 0 0 0 0;
+  }
+  .works .container .splide .splide__track .splide__progress__bar {
+    height: 3px;
+  }
+} /* 1024px～1280px responsive-close */
+/**********************************************************************************
+□ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □  
+
+◆	Stylesheet: 768px～1023px(iPad縦からiPad横)までのモニタで適用	◆
+
+start----------------------------------------------------------------------------*/
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .works .bg {
+    left: 0;
+    top: 0;
+  }
+  .works .title {
+    padding: 60px 0 60px 0;
+  }
+  .works .title h3 .catch {
+    line-height: 1.25;
+    letter-spacing: 5px;
+    font-size: 80px;
+  }
+  .works .title h2 {
+    margin: 5px 0 0 0;
+  }
+  .works .title h2 .catch {
+    letter-spacing: 4px;
+    font-size: 28px;
+  }
+  .works .container {
+    width: 96%;
+    max-width: 1480px;
+    margin: 40px auto 0;
+    padding: 0 0 70px 0;
+  }
+  .works .container .splide .splide__track .splide__list .splide__slide {
+    width: 50%;
+  }
+  .works .container .splide .splide__track .splide__list .splide__slide .thumb {
+    line-height: 0;
+    width: 100%;
+    height: 300px;
+  }
+  .works .container .splide .splide__track .splide__list .splide__slide .thumb img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+  .works .container .splide .splide__track .splide__list .splide__slide .text {
+    padding: 30px 20px 30px 20px;
+  }
+  .works .container .splide .splide__track .splide__list .splide__slide .text .category p {
+    letter-spacing: 4px;
+    font-size: 22px;
+  }
+  .works .container .splide .splide__track .splide__list .splide__slide .text .category h3 .catch {
+    font-size: 19px;
+  }
+  .works .container .splide .splide__track .splide__list .splide__slide .text .category h4 .catch {
+    font-size: 17px;
+  }
+  .works .container .splide .splide__track .splide__list .splide__slide.is-active {
+    padding: 0 0 0 0;
+  }
+  .works .container .splide .splide__track .splide__progress__bar {
+    height: 3px;
+  }
+} /* 768px～1023px responsive-closed */
+/*end ----------------------------------------------------------------------------
+□ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ 
+**********************************************************************************/
+/**********************************************************************************
+ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ 
+
+◆	Stylesheet: 767pxまで(スマホ)のモニタで適用	◆
+
+□ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ 
+start----------------------------------------------------------------------------*/
+@media screen and (max-width: 767px) {
+  .works .bg {
+    left: 0;
+    top: 0;
+  }
+  .works .title {
+    padding: 60px 0 60px 0;
+  }
+  .works .title h3 .catch {
+    line-height: 1.25;
+    letter-spacing: 2px;
+    font-size: 10vw;
+  }
+  .works .title h2 {
+    margin: 5px 0 0 0;
+  }
+  .works .title h2 .catch {
+    letter-spacing: 4px;
+    font-size: 6vw;
+  }
+  .works .container {
+    width: 96%;
+    max-width: 1480px;
+    margin: 5px auto 0;
+    padding: 0 0 55px 0;
+  }
+  .works .container .splide .splide__track .splide__list .splide__slide {
+    width: 50%;
+  }
+  .works .container .splide .splide__track .splide__list .splide__slide .thumb {
+    line-height: 0;
+    width: 100%;
+    height: 300px;
+  }
+  .works .container .splide .splide__track .splide__list .splide__slide .thumb img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+  .works .container .splide .splide__track .splide__list .splide__slide .text {
+    padding: 30px 30px 30px 30px;
+  }
+  .works .container .splide .splide__track .splide__list .splide__slide .text .category p {
+    letter-spacing: 4px;
+    font-size: 5vw;
+  }
+  .works .container .splide .splide__track .splide__list .splide__slide .text h3 .catch {
+    font-size: 4.5vw;
+  }
+  .works .container .splide .splide__track .splide__list .splide__slide .text h4 .catch {
+    font-size: 3.5vw;
+  }
+  .works .container .splide .splide__track .splide__list .splide__slide.is-active {
+    padding: 0 0 0 0;
+  }
+  .works .container .splide .splide__track .splide__progress__bar {
+    height: 3px;
+  }
+} /* 767px responsive-closed */
+/*end ----------------------------------------------------------------------------
+□ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ 
+**********************************************************************************/
+/*===================================================================================================
+□ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ 
+
+〇 CTA 〇
+
+□ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ 
+====================================================================================================*/
+.cta {
+  overflow: hidden;
+  margin: 0 0 0 0;
+  padding: 90px 0 50px 0;
+}
+.cta .container {
+  max-width: 1480px;
+  margin: 0 auto 0;
+  padding: 0 2% 0 2%;
+}
+.cta .container h2 {
+  position: relative;
+  z-index: 2;
+  margin: 0 0 -40px 0;
+}
+.cta .container h2 .catch {
+  font-family: "Cinzel";
+  font-weight: 500;
+  line-height: 0.9;
+  letter-spacing: 10px;
+  text-align: center;
+  font-size: 80px;
+}
+.cta .container .inner {
+  overflow: hidden;
+  position: relative;
+  box-shadow: rgba(100, 100, 111, 0.2) 0 7px 29px 0;
+  max-width: 1280px;
+  margin: 0 auto 0;
+}
+.cta .container .inner .bg {
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+.cta .container .inner .bg img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.cta .container .inner .block {
+  position: relative;
+  z-index: 2;
+  max-width: 85%;
+  margin: 0 auto 0;
+  padding: 80px 80px 80px 80px;
+}
+.cta .container .inner .block .sentence {
+  text-align: center;
+}
+.cta .container .inner .block .sentence p {
+  line-height: 2;
+  font-size: 22px;
+  padding: 10px 0 10px 0;
+}
+.cta .container .inner .block ul {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  margin: 40px 0 0 0;
+}
+.cta .container .inner .block ul li {
+  border: solid 1px #343434;
+  width: 48.5%;
+  padding: 0 30px 30px 30px;
+}
+.cta .container .inner .block ul li a {
+  color: #343434;
+}
+.cta .container .inner .block ul li a h3 {
+  margin: -20px 0 0 40px;
+}
+.cta .container .inner .block ul li a h3 .catch {
+  display: inline-block;
+  color: #ffffff;
+  background: #343434;
+  font-size: 22px;
+  padding: 2px 10px 2px 10px;
+}
+.cta .container .inner .block ul li a .number {
+  display: flex;
+  align-items: center;
+  padding: 30px 0 0 0;
+}
+.cta .container .inner .block ul li a .number .icon {
+  line-height: 0;
+  width: 42px;
+}
+.cta .container .inner .block ul li a .number p {
+  font-family: "Cinzel";
+  font-weight: 500;
+  line-height: 1.2;
+  font-size: 22px;
+}
+.cta .container .inner .block ul li a .date {
+  text-align: right;
+  font-size: 22px;
+  margin: 10px 0 0 0;
+}
+.cta .container .inner .block ul li a .date .en {
+  font-family: "Cinzel";
+  font-weight: 500;
+}
+.cta .container .inner .block .form {
+  margin: 30px 0 0 0;
+}
+.cta .container .inner .block .form a {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: rgba(100, 100, 111, 0.2) 0 7px 29px 0;
+  background: #000000;
+  padding: 10px 0 10px 0;
+}
+.cta .container .inner .block .form a .icon {
+  line-height: 0;
+  width: 40px;
+}
+.cta .container .inner .block .form a .catch {
+  padding: 0 0 0 10px;
+}
+.cta .container .inner .block .form a .catch p {
+  color: #ffffff;
+  letter-spacing: 5px;
+  font-size: 22px;
+}
+.cta .container .inner .block .form a .link {
+  position: absolute;
+  line-height: 0;
+  right: 20px;
+  top: 50%;
+  transform: translate(0, -50%);
+  width: 40px;
+}
+
+/**********************************************************************************
+□ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □  
+
+◆	Stylesheet: 1024px～1280px(iPad縦からiPad横)までのモニタで適用	◆
+
+start----------------------------------------------------------------------------*/
+@media screen and (min-width: 1024px) and (max-width: 1280px) {
+  .cta {
+    margin: 0 0 0 0;
+    padding: 90px 0 50px 0;
+  }
+  .cta .container {
+    max-width: 100%;
+    margin: 0 auto 0;
+    padding: 0 3% 0 3%;
+  }
+  .cta .container h2 {
+    margin: 0 0 -35px 0;
+  }
+  .cta .container h2 .catch {
+    line-height: 0.9;
+    letter-spacing: 10px;
+    font-size: 75px;
+  }
+  .cta .container .inner {
+    max-width: 100%;
+    margin: 0 auto 0;
+  }
+  .cta .container .inner .bg {
+    left: 0;
+    right: 0;
+  }
+  .cta .container .inner .block {
+    max-width: 100%;
+    margin: 0 auto 0;
+    padding: 80px 40px 80px 40px;
+  }
+  .cta .container .inner .block .sentence p {
+    line-height: 2;
+    font-size: 22px;
+    padding: 10px 0 10px 0;
+  }
+  .cta .container .inner .block ul {
+    margin: 40px 0 0 0;
+  }
+  .cta .container .inner .block ul li {
+    width: 48.5%;
+    padding: 0 30px 30px 30px;
+  }
+  .cta .container .inner .block ul li a h3 {
+    margin: -20px 0 0 40px;
+  }
+  .cta .container .inner .block ul li a h3 .catch {
+    font-size: 22px;
+    padding: 2px 10px 2px 10px;
+  }
+  .cta .container .inner .block ul li a .number {
+    padding: 30px 0 0 0;
+  }
+  .cta .container .inner .block ul li a .number .icon {
+    line-height: 0;
+    width: 42px;
+  }
+  .cta .container .inner .block ul li a .number p {
+    line-height: 1.2;
+    font-size: 42px;
+  }
+  .cta .container .inner .block ul li a .date {
+    font-size: 22px;
+    margin: 10px 0 0 0;
+  }
+  .cta .container .inner .block .form {
+    margin: 30px 0 0 0;
+  }
+  .cta .container .inner .block .form a {
+    padding: 10px 0 10px 0;
+  }
+  .cta .container .inner .block .form a .icon {
+    line-height: 0;
+    width: 40px;
+  }
+  .cta .container .inner .block .form a .catch {
+    padding: 0 0 0 10px;
+  }
+  .cta .container .inner .block .form a .catch p {
+    letter-spacing: 5px;
+    font-size: 22px;
+  }
+  .cta .container .inner .block .form a .link {
+    line-height: 0;
+    right: 20px;
+    top: 50%;
+    transform: translate(0, -50%);
+    width: 40px;
+  }
+} /* 1024px～1280px responsive-close */
+/**********************************************************************************
+□ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □  
+
+◆	Stylesheet: 768px～1023px(iPad縦からiPad横)までのモニタで適用	◆
+
+start----------------------------------------------------------------------------*/
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .cta {
+    margin: 0 0 0 0;
+    padding: 90px 0 50px 0;
+  }
+  .cta .container {
+    max-width: 100%;
+    margin: 0 auto 0;
+    padding: 0 3% 0 3%;
+  }
+  .cta .container h2 {
+    margin: 0 0 -30px 0;
+  }
+  .cta .container h2 .catch {
+    line-height: 0.9;
+    letter-spacing: 10px;
+    font-size: 70px;
+  }
+  .cta .container .inner {
+    max-width: 100%;
+    margin: 0 auto 0;
+  }
+  .cta .container .inner .bg {
+    left: 0;
+    right: 0;
+  }
+  .cta .container .inner .block {
+    max-width: 100%;
+    margin: 0 auto 0;
+    padding: 80px 30px 80px 30px;
+  }
+  .cta .container .inner .block .sentence p {
+    line-height: 2;
+    font-size: 22px;
+    padding: 10px 0 10px 0;
+  }
+  .cta .container .inner .block ul {
+    margin: 40px 0 0 0;
+  }
+  .cta .container .inner .block ul li {
+    width: 48.5%;
+    padding: 0 25px 30px 25px;
+  }
+  .cta .container .inner .block ul li a h3 {
+    margin: -20px 0 0 40px;
+  }
+  .cta .container .inner .block ul li a h3 .catch {
+    font-size: 22px;
+    padding: 2px 10px 2px 10px;
+  }
+  .cta .container .inner .block ul li a .number {
+    padding: 30px 0 0 0;
+  }
+  .cta .container .inner .block ul li a .number .icon {
+    line-height: 0;
+    width: 32px;
+  }
+  .cta .container .inner .block ul li a .number p {
+    line-height: 1.2;
+    font-size: 30px;
+  }
+  .cta .container .inner .block ul li a .date {
+    font-size: 20px;
+    margin: 10px 0 0 0;
+  }
+  .cta .container .inner .block .form {
+    margin: 30px 0 0 0;
+  }
+  .cta .container .inner .block .form a {
+    padding: 10px 0 10px 0;
+  }
+  .cta .container .inner .block .form a .icon {
+    line-height: 0;
+    width: 40px;
+  }
+  .cta .container .inner .block .form a .catch {
+    padding: 0 0 0 10px;
+  }
+  .cta .container .inner .block .form a .catch p {
+    letter-spacing: 5px;
+    font-size: 22px;
+  }
+  .cta .container .inner .block .form a .link {
+    line-height: 0;
+    right: 20px;
+    top: 50%;
+    transform: translate(0, -50%);
+    width: 40px;
+  }
+} /* 768px～1023px responsive-closed */
+/*end ----------------------------------------------------------------------------
+□ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ 
+**********************************************************************************/
+/**********************************************************************************
+ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ 
+
+◆	Stylesheet: 767pxまで(スマホ)のモニタで適用	◆
+
+□ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ 
+start----------------------------------------------------------------------------*/
+@media screen and (max-width: 767px) {
+  .cta {
+    margin: 0 0 0 0;
+    padding: 90px 0 50px 0;
+  }
+  .cta .container {
+    max-width: 100%;
+    margin: 0 auto 0;
+    padding: 0 3% 0 3%;
+  }
+  .cta .container h2 {
+    margin: 0 0 -5vw 0;
+  }
+  .cta .container h2 .catch {
+    line-height: 0.9;
+    letter-spacing: 5px;
+    font-size: 11vw;
+  }
+  .cta .container .inner {
+    max-width: 100%;
+    margin: 0 auto 0;
+  }
+  .cta .container .inner .bg {
+    left: 0;
+    right: 0;
+  }
+  .cta .container .inner .block {
+    max-width: 100%;
+    margin: 0 auto 0;
+    padding: 60px 20px 60px 20px;
+  }
+  .cta .container .inner .block .sentence p {
+    line-height: 2;
+    font-size: 4.5vw;
+    padding: 10px 0 10px 0;
+  }
+  .cta .container .inner .block .sentence p br {
+    display: none;
+  }
+  .cta .container .inner .block ul {
+    display: block;
+    margin: 20px 0 0 0;
+  }
+  .cta .container .inner .block ul li {
+    width: 100%;
+    margin: 45px 0 0 0;
+    padding: 0 15px 30px 15px;
+  }
+  .cta .container .inner .block ul li a h3 {
+    text-align: center;
+    margin: -20px 0 0 0;
+  }
+  .cta .container .inner .block ul li a h3 .catch {
+    font-size: 22px;
+    padding: 2px 10px 2px 10px;
+  }
+  .cta .container .inner .block ul li a .number {
+    padding: 30px 0 0 0;
+  }
+  .cta .container .inner .block ul li a .number .icon {
+    line-height: 0;
+    width: 8.5vw;
+  }
+  .cta .container .inner .block ul li a .number p {
+    line-height: 1.2;
+    font-size: 8.5vw;
+  }
+  .cta .container .inner .block ul li a .date {
+    text-align: center;
+    font-size: 4vw;
+    margin: 10px 0 0 0;
+  }
+  .cta .container .inner .block .form {
+    margin: 30px 0 0 0;
+  }
+  .cta .container .inner .block .form a {
+    padding: 10px 0 10px 0;
+  }
+  .cta .container .inner .block .form a .icon {
+    line-height: 0;
+    width: 6vw;
+  }
+  .cta .container .inner .block .form a .catch {
+    padding: 0 10px 0 10px;
+  }
+  .cta .container .inner .block .form a .catch p {
+    letter-spacing: 2px;
+    font-size: 5vw;
+  }
+  .cta .container .inner .block .form a .link {
+    position: relative;
+    line-height: 0;
+    right: 0;
+    top: 0;
+    transform: translate(0, 0%);
+    width: 5vw;
+  }
+} /* 767px responsive-closed */
+/*end ----------------------------------------------------------------------------
+□ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ 
+**********************************************************************************/
+/*===================================================================================================
+□ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ 
+
+〇 SECTION TITLE 〇
+
+□ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ 
+====================================================================================================*/
+.what {
+  overflow: hidden;
+  position: relative;
+  margin: 30px 0 0 0;
+  padding: 40px 0 40px 0;
+}
+.what .bg-image {
+  position: absolute;
+  z-index: 1;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+}
+.what .bg-image img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.what .bg-color {
+  content: "";
+  position: absolute;
+  z-index: 2;
+  opacity: 0.85;
+  left: 0;
+  top: 0;
+  background: linear-gradient(90deg, rgb(32, 32, 32) 0%, rgb(0, 0, 0) 100%);
+  mix-blend-mode: multiply;
+  width: 100%;
+  height: 100%;
+}
+.what .back {
+  position: relative;
+  z-index: 3;
+}
+.what .back p {
+  visibility: hidden;
+  color: #f9f9f9;
+  font-family: "Cinzel";
+  line-height: 1.25;
+  opacity: 0.6;
+  letter-spacing: 5px;
+  text-align: center;
+  font-size: 80px;
+}
+.what .container {
+  position: relative;
+  z-index: 4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 1920px;
+  margin: 0 auto 0;
+}
+.what .container .mark-wrapper {
+  width: 600px;
+}
+.what .container .mark-wrapper ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0 0 0;
+}
+.what .container .mark-wrapper ul li {
+  visibility: hidden;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 220px;
+  height: 220px;
+  margin: 0 30px 0 0;
+}
+.what .container .mark-wrapper ul li::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  border: 3px solid rgba(139, 139, 139, 0.7);
+  border-top-color: rgb(214, 214, 214);
+  border-radius: 50%;
+  animation: what-mark-spin 3s ease-in-out infinite;
+  width: 100%;
+  height: 100%;
+}
+@keyframes what-mark-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+.what .container .mark-wrapper ul li p {
+  color: #f9f9f9;
+  text-align: center;
+  font-size: 22px;
+  border: #f9f9f9;
+}
+.what .container .mark-wrapper ul li.cg {
+  width: 100px;
+}
+.what .container .mark-wrapper ul li.cg p {
+  font-family: "Cinzel";
+  font-size: 25px;
+  padding-bottom: 30%;
+}
+.what .container .mark-wrapper ul li.cg::after {
+  display: none;
+}
+.what .container .mark-wrapper ul li:last-child {
+  margin: 0 0 0 0;
+}
+.what .container .mark-wrapper ul:nth-child(1) li:nth-child(2)::after {
+  animation-delay: 0.4s;
+}
+.what .container .mark-wrapper ul:nth-child(2) li:nth-child(1)::after {
+  animation-delay: 0.8s;
+}
+.what .container .mark-wrapper ul:nth-child(2) li:nth-child(3)::after {
+  animation-delay: 1.2s;
+}
+.what .container .mark-wrapper ul:nth-child(3) {
+  margin: -30px 0 0 0;
+}
+.what .container .mark-wrapper ul:nth-child(3) li:nth-child(1)::after {
+  animation-delay: 1.6s;
+}
+.what .container .text {
+  color: #f9f9f9;
+  width: 40%;
+  padding: 0 0 0 80px;
+}
+.what .container .text h2 .catch {
+  font-weight: 500;
+  font-size: 35px;
+}
+.what .container .text .sentence {
+  margin: 30px 0 0 0;
+}
+.what .container .text .sentence p {
+  line-height: 2;
+  letter-spacing: 1px;
+  font-size: 18px;
+  padding: 25px 0 25px 0;
+}
+
+/**********************************************************************************
+□ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □  
+
+◆	Stylesheet: 1024px～1280px(iPad縦からiPad横)までのモニタで適用	◆
+
+start----------------------------------------------------------------------------*/
+@media screen and (min-width: 1024px) and (max-width: 1280px) {
+  .what {
+    margin: 30px 0 0 0;
+    padding: 40px 0 40px 0;
+  }
+  .what .bg-image img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+  .what .bg-color {
+    z-index: 2;
+    opacity: 0.85;
+  }
+  .what .back p {
+    line-height: 1.25;
+    opacity: 0.6;
+    letter-spacing: 5px;
+    font-size: 70px;
+  }
+  .what .container {
+    max-width: 100%;
+    margin: 20px auto 0;
+  }
+  .what .container .mark-wrapper {
+    width: 520px;
+  }
+  .what .container .mark-wrapper ul {
+    margin: 20px 0 0 0;
+  }
+  .what .container .mark-wrapper ul li {
+    width: 180px;
+    height: 180px;
+    margin: 0 20px 0 0;
+  }
+  .what .container .mark-wrapper ul li::after {
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .what .container .mark-wrapper ul li p {
+    font-size: 20px;
+  }
+  .what .container .mark-wrapper ul li.cg {
+    width: 100px;
+  }
+  .what .container .mark-wrapper ul li.cg p {
+    font-size: 50px;
+  }
+  .what .container .mark-wrapper ul li.cg::after {
+    display: none;
+  }
+  .what .container .mark-wrapper ul li:last-child {
+    margin: 0 0 0 0;
+  }
+  .what .container .text {
+    width: calc(100% - 520px);
+    padding: 0 25px 0 25px;
+  }
+  .what .container .text h2 .catch {
+    font-size: 40px;
+  }
+  .what .container .text .sentence {
+    margin: 30px 0 0 0;
+  }
+  .what .container .text .sentence p {
+    line-height: 2;
+    letter-spacing: 1px;
+    font-size: 17px;
+    padding: 25px 0 25px 0;
+  }
+} /* 1024px～1280px responsive-close */
+/**********************************************************************************
+□ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □  
+
+◆	Stylesheet: 768px～1023px(iPad縦からiPad横)までのモニタで適用	◆
+
+start----------------------------------------------------------------------------*/
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .what {
+    margin: 30px 0 0 0;
+    padding: 40px 0 40px 0;
+  }
+  .what .bg-image img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+  .what .bg-color {
+    z-index: 2;
+    opacity: 0.85;
+  }
+  .what .back p {
+    line-height: 1.25;
+    opacity: 0.6;
+    letter-spacing: 5px;
+    font-size: 70px;
+  }
+  .what .container {
+    display: block;
+    max-width: 100%;
+    margin: 20px auto 0;
+  }
+  .what .container .mark-wrapper {
+    width: 520px;
+    margin: 0 auto 0;
+  }
+  .what .container .mark-wrapper ul {
+    margin: 20px 0 0 0;
+  }
+  .what .container .mark-wrapper ul li {
+    width: 180px;
+    height: 180px;
+    margin: 0 20px 0 0;
+  }
+  .what .container .mark-wrapper ul li::after {
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .what .container .mark-wrapper ul li p {
+    font-size: 20px;
+  }
+  .what .container .mark-wrapper ul li.cg {
+    width: 100px;
+  }
+  .what .container .mark-wrapper ul li.cg p {
+    font-size: 50px;
+  }
+  .what .container .mark-wrapper ul li.cg::after {
+    display: none;
+  }
+  .what .container .mark-wrapper ul li:last-child {
+    margin: 0 0 0 0;
+  }
+  .what .container .text {
+    width: calc(100% - 0px);
+    padding: 30px 4% 0 4%;
+  }
+  .what .container .text h2 .catch {
+    text-align: center;
+    font-size: 40px;
+  }
+  .what .container .text .sentence {
+    margin: 20px 0 0 0;
+  }
+  .what .container .text .sentence p {
+    line-height: 2;
+    letter-spacing: 1px;
+    font-size: 17px;
+    padding: 25px 0 25px 0;
+  }
+} /* 768px～1023px responsive-closed */
+/*end ----------------------------------------------------------------------------
+□ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ 
+**********************************************************************************/
+/**********************************************************************************
+ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ 
+
+◆	Stylesheet: 767pxまで(スマホ)のモニタで適用	◆
+
+□ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ 
+start----------------------------------------------------------------------------*/
+@media screen and (max-width: 767px) {
+  .what {
+    margin: 30px 0 0 0;
+    padding: 20px 0 40px 0;
+  }
+  .what .bg-image img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+  .what .bg-color {
+    z-index: 2;
+    opacity: 0.85;
+  }
+  .what .back p {
+    line-height: 1.25;
+    opacity: 0.6;
+    letter-spacing: 3px;
+    font-size: 9vw;
+  }
+  .what .container {
+    display: block;
+    max-width: 100%;
+    margin: 20px auto 0;
+  }
+  .what .container .mark-wrapper {
+    width: 100%;
+    margin: 0 auto 0;
+  }
+  .what .container .mark-wrapper ul {
+    margin: 20px 0 0 0;
+  }
+  .what .container .mark-wrapper ul li {
+    position: relative;
+    width: 32vw;
+    height: 32vw;
+    margin: 0 2vw 0 0;
+  }
+  .what .container .mark-wrapper ul li::after {
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .what .container .mark-wrapper ul li p {
+    font-size: 4vw;
+  }
+  .what .container .mark-wrapper ul li.cg {
+    width: 20vw;
+  }
+  .what .container .mark-wrapper ul li.cg p {
+    font-size: 10vw;
+  }
+  .what .container .mark-wrapper ul li.cg::after {
+    display: none;
+  }
+  .what .container .mark-wrapper ul li:last-child {
+    margin: 0 0 0 0;
+  }
+  .what .container .mark-wrapper ul:nth-child(3) {
+    margin: -20px 0 0 0;
+  }
+  .what .container .text {
+    width: calc(100% - 0px);
+    padding: 30px 5% 0 5%;
+  }
+  .what .container .text h2 .catch {
+    text-align: center;
+    font-size: 7.25vw;
+  }
+  .what .container .text .sentence {
+    margin: 15px 0 0 0;
+  }
+  .what .container .text .sentence p {
+    line-height: 2;
+    letter-spacing: 1px;
+    font-size: 4vw;
+    padding: 20px 0 20px 0;
+  }
+} /* 767px responsive-closed */
+/*end ----------------------------------------------------------------------------
+□ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ 
+**********************************************************************************/
+/*===================================================================================================
+□ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ 
+
+〇 LOADING-TOP 〇
+
+□ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ 
+====================================================================================================*/
+.loading {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 199999;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+.loading .bg {
+  position: absolute;
+  z-index: 200000;
+  width: 100%;
+  height: 200vh;
+  background: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgb(17, 17, 17) 50%, rgb(64, 64, 64) 100%);
+  z-index: 200000;
+  left: 0;
+  top: 0;
+}
+.loading .container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 200001;
+}
+.loading .container .text {
+  position: relative;
+  z-index: 200002;
+  color: #fff;
+  font-family: "Cinzel";
+}
+.loading .container .text .main {
+  visibility: hidden;
+  letter-spacing: 6px;
+  text-transform: uppercase;
+  font-size: 24px;
+}
+.loading .container .text .main .line {
+  color: transparent;
+  -webkit-text-stroke: rgb(220, 220, 220) 1px;
+}
+.loading .container .text .tagline {
+  visibility: hidden;
+  font-weight: 700;
+  text-align: center;
+  letter-spacing: 4px;
+  font-size: 16px;
+}
+
+/**********************************************************************************
+□ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □  
+
+◆	Stylesheet: 1024px～1280px(iPad縦からiPad横)までのモニタで適用	◆
+
+start----------------------------------------------------------------------------*/
+@media screen and (min-width: 1024px) and (max-width: 1280px) {
+  .loading .container .text .main {
+    letter-spacing: 6px;
+    font-size: 24px;
+  }
+  .loading .container .text .main .line {
+    -webkit-text-stroke: rgb(220, 220, 220) 1px;
+  }
+  .loading .container .text .tagline {
+    letter-spacing: 4px;
+    font-size: 16px;
+  }
+} /* 1024px～1280px responsive-close */
+/**********************************************************************************
+□ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □  
+
+◆	Stylesheet: 768px～1023px(iPad縦からiPad横)までのモニタで適用	◆
+
+start----------------------------------------------------------------------------*/
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .loading .container .text .main {
+    letter-spacing: 6px;
+    font-size: 24px;
+  }
+  .loading .container .text .main .line {
+    -webkit-text-stroke: rgb(220, 220, 220) 1px;
+  }
+  .loading .container .text .tagline {
+    letter-spacing: 4px;
+    font-size: 16px;
+  }
+} /* 768px～1023px responsive-closed */
+/*end ----------------------------------------------------------------------------
+□ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ 
+**********************************************************************************/
+/**********************************************************************************
+ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ 
+
+◆	Stylesheet: 767pxまで(スマホ)のモニタで適用	◆
+
+□ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ 
+start----------------------------------------------------------------------------*/
+@media screen and (max-width: 767px) {
+  .loading .container .text .main {
+    letter-spacing: 5px;
+    font-size: 5vw;
+  }
+  .loading .container .text .main .line {
+    -webkit-text-stroke: rgb(220, 220, 220) 1px;
+  }
+  .loading .container .text .tagline {
+    letter-spacing: 4px;
+    font-size: 4vw;
+  }
+} /* 767px responsive-closed */
+/*end ----------------------------------------------------------------------------
+□ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ 
+**********************************************************************************/
+/**********************************************************************************
+□ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □   
+
+◆	Stylesheet: さらに刻んで320pxまでのモニタで適用	◆
+
+□ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ 
+start----------------------------------------------------------------------------*/
+/* 320px responsive-closed */
+/*end ----------------------------------------------------------------------------
+□ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ 
+**********************************************************************************/
+body {
+  font-family: "游ゴシック", "Yu Gothic", sans-serif;
+  background-color: #f5f5f5;
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  background-color: #222;
+  color: #fff;
+  border: none;
+  padding: 0.7em 1.2em;
+  margin: 0.5em;
+  font-size: 1em;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+button:hover {
+  background-color: #444;
+}
+
+input[type=text] {
+  padding: 0.5em;
+  font-size: 1em;
+  margin-right: 1em;
+}
+
+.battle-ui {
+  background: linear-gradient(to bottom, #111, #333);
+  color: #fff;
+  padding: 2em;
+}
+.battle-ui .party-section,
+.battle-ui .enemy-section,
+.battle-ui .command-section,
+.battle-ui .log-section {
+  margin-top: 1.5em;
+}
+.battle-ui ul {
+  list-style: none;
+  padding: 0;
+}
+.battle-ui ul li {
+  margin: 0.5em 0;
+}
+.battle-ui h2 {
+  margin-bottom: 0.5em;
+  border-bottom: 1px solid #999;
+  padding-bottom: 0.2em;
+}
+.battle-ui .log-section {
+  background-color: #222;
+  max-height: 200px;
+  overflow-y: auto;
+  padding: 1em;
+  border-radius: 5px;
+}
+
+.map-ui {
+  background: #eef0f4;
+  padding: 3em 1em;
+  font-family: "游ゴシック", "Yu Gothic", sans-serif;
+}
+.map-ui .bg-image {
+  background-image: url("/static/game/images/map-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  opacity: 0.2;
+}
+.map-ui .container {
+  max-width: 960px;
+  margin: 0 auto;
+  background: white;
+  padding: 2em;
+  border-radius: 10px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+}
+.map-ui .container .text {
+  text-align: center;
+}
+.map-ui .container .text h2 {
+  font-size: 2em;
+  color: #333;
+}
+.map-ui .container .text .sentence {
+  font-size: 1.1em;
+  color: #666;
+  margin: 1em 0 2em;
+}
+.map-ui .container form {
+  text-align: center;
+  margin-bottom: 2em;
+}
+.map-ui .container .back h3 {
+  font-size: 1.3em;
+  color: #444;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 0.4em;
+}
+.map-ui .container .back ul {
+  list-style: disc;
+  margin-left: 2em;
+  color: #333;
+}
+
+.battle-screen {
+  background: linear-gradient(to bottom, #222, #000);
+  color: #fff;
+  font-family: "メイリオ", "游ゴシック", sans-serif;
+  padding: 2em;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  position: relative;
+}
+
+.enemy-box {
+  text-align: center;
+}
+.enemy-box .enemy-row {
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+}
+.enemy-box .enemy-unit {
+  border: 1px solid #999;
+  padding: 1em;
+  background: #333;
+  border-radius: 4px;
+  min-width: 120px;
+}
+
+.party-box {
+  text-align: center;
+}
+.party-box .party-row {
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+}
+.party-box .party-unit {
+  border: 1px solid #888;
+  padding: 1em;
+  background: #111;
+  border-radius: 4px;
+  min-width: 120px;
+}
+
+.command-box {
+  background: #000;
+  border: 2px solid #fff;
+  color: #fff;
+  padding: 1em;
+  margin: 0 auto;
+  width: 60%;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.3);
+}
+.command-box button, .command-box select {
+  margin: 0.5em;
+  padding: 0.5em 1em;
+  background-color: #222;
+  color: #fff;
+  border: 1px solid #888;
+  font-size: 1em;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.command-box button:hover {
+  background-color: #444;
+}
+.command-box select {
+  background-color: #111;
+}
+
+.log-box {
+  background: #111;
+  color: #0f0;
+  border: 2px solid #0f0;
+  padding: 1em;
+  margin: 2em auto 0;
+  width: 80%;
+  height: 180px;
+  overflow-y: auto;
+  font-family: "Courier New", monospace;
+  border-radius: 6px;
+}
+.log-box ul {
+  list-style: none;
+  padding-left: 0;
+}
+.log-box li {
+  margin: 0.2em 0;
+}
+
+.menu-container {
+  max-width: 640px;
+  margin: 8em auto;
+  background: linear-gradient(to bottom right, #1e1e2f, #111);
+  padding: 2em 3em;
+  border: 3px solid #fff;
+  border-radius: 12px;
+  box-shadow: 0 0 16px rgba(255, 255, 255, 0.3);
+  color: #fff;
+  font-family: "メイリオ", "游ゴシック", sans-serif;
+}
+
+.menu-container h1 {
+  font-size: 2em;
+  margin-bottom: 1em;
+  text-align: center;
+}
+
+.menu-container ul {
+  list-style: none;
+  padding: 0;
+}
+
+.menu-container li {
+  margin: 0.8em 0;
+}
+
+.menu-container a {
+  display: inline-block;
+  color: #c3a3ff;
+  background-color: #222;
+  padding: 0.6em 1.2em;
+  border: 1px solid #888;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+}
+
+.menu-container a:hover {
+  background-color: #5e2bff;
+  color: #fff;
+  box-shadow: 0 0 10px #af91ff;
+}
+
+/*# sourceMappingURL=style.css.map */
